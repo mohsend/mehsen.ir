@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" dir="rtl">
+
+  {% include head.html %}
+
+  <body class="{{ site.options.bodyclass }}">
+
+    {% include sidebar.html %}
+
+    <div class="content container">
+      {{ content }}
+      <footer style="margin: 0rem;">
+		<span id="license">{{ site.options.license }}</span>
+	</footer>
+    </div>
+  </body>
+</html>

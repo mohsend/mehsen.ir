@@ -1,0 +1,47 @@
+---
+layout: default
+title: Blog
+order: 4
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post {{ post.class }}">
+	{% if post.image.featured %}
+	<img class="featuredimage" src="{{ post.image.featured }}">
+	{% endif %}
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+    {% if post.audio %}
+    <audio preload="metadata" controls>
+      <source src="{{ post.audio.ogg.file }}" type="audio/ogg">
+      <source src="{{ post.audio.mp3.file }}" type="audio/mpeg">
+Your browser does not support the audio element. Here's download links: <a href="{{ post.audio.mp3.file }}" download>Download MP3</a> / <a href="{{ post.audio.ogg.file }}" download>Download OGG</a>
+    </audio>
+    {% endif %}
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

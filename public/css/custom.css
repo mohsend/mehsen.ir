@@ -1,0 +1,69 @@
+.rtl {
+  direction: rtl;
+}
+.rtl .sidebar {
+    text-align: right;
+}
+
+#license {
+  font-size: 15px;
+}
+
+.featuredimage {
+  width: 100%;
+  display: block;
+  margin: 0 0 1rem 0;
+  border-radius: 0;
+}
+
+/* theme-mehsen-01 */
+/* http://www.colourlovers.com/palette/101983/Lemonless */
+.theme-mehsen-01 {
+  color: #000000;
+  background-color:#EFEFEF;
+  font-family: 'Pontano Sans', Helvetica, Arial, sans-serif;
+}
+.theme-mehsen-01 .sidebar {
+  background-color: #0A837F;
+}
+.theme-mehsen-01 .sidebar-about h1 {
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+}
+.theme-mehsen-01 .sidebar a {
+  color: #EFEFEF;
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+}
+.theme-mehsen-01 .post-date {
+  color: #FF3D00;
+}
+.theme-mehsen-01 .content a,
+.theme-mehsen-01 .related-posts li a:hover {
+  color: #076461;
+}
+.theme-mehsen-01 h1,
+.theme-mehsen-01 h2,
+.theme-mehsen-01 h3,
+.theme-mehsen-01 h4,
+.theme-mehsen-01 h5,
+.theme-mehsen-01 h6 {
+  color: #076461;
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+}
+
+/* theme-mehsen-02 */
+/* http://www.colourlovers.com/palette/101983/Lemonless */
+.theme-mehsen-02 .sidebar {
+  background-color: #FFBC11;
+}
+.theme-mehsen-02 .content a,
+.theme-mehsen-02 .related-posts li a:hover {
+  color: #FF3D00;
+}
+.theme-mehsen-02 {
+  color: #002C2B;
+}
+
+audio {
+  width: 100%;
+  padding: 0.5rem 0;
+}

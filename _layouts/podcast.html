@@ -1,0 +1,9 @@
+---
+layout: post
+---
+    <audio preload="metadata" controls>
+    <source src="{{ page.audio.ogg.file }}" type="audio/ogg">
+    <source src="{{ page.audio.mp3.file }}" type="audio/mpeg">
+Your browser does not support the audio element. Here's download links: <a href="{{ page.audio.mp3.file }}" download>Download MP3</a> / <a href="{{ page.audio.ogg.file }}" download>Download OGG</a>
+  </audio>
+  {{ content }}
