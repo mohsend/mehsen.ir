@@ -1,6 +1,7 @@
 .rtl {
   direction: rtl;
 }
+
 .rtl .sidebar {
     text-align: right;
 }
