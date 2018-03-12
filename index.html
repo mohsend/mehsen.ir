@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <head>
-	<title>HTML and CSS "Hello World"</title>
+	<title>Live Radio</title>
+	<meta charset="UTF-8">
 	<style>
 		body {
 			background-color: #2D2D2D;
+			direction: rtl;
 		}
 		
 		h1 {
-			color: #C26356;
+			color: #eee;
 			font-size: 30px;
-			font-family: Menlo, Monaco, fixed-width;
+			font-family: Open Sans, Arial, Sans, fixed-width;
 		}
 		
 		p {
 			color: white;
-			font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
+			font-family: Open Sans, Arial, Sans, fixed-width;
+		}
+		a {
+			color: #C26356;
 		}
 	</style>
 </head>
 <body>
-	<h1>Hello World Example</h1>
-	<p>This is a very basic "Hello World" example made up in HTML and CSS. See if you can change the size of the header text above.</p>
+  <div style="width: 200px; max-width: 90%; margin: auto;">
+	<h1 style="margin-top: 3rem; text-align: center;">پخش زنده برنامه رادیویی</h1>
+	<p style="margin-top: 3rem; text-align: center;"></p>
+	<audio preload="auto" controls>
+	  <source src="http://162.223.94.227:8000/mehsen.ogg" type='audio/ogg; codecs="opus"'>
+	Your browser does not support the audio element.
+	</audio>
+	<p><a href="https://t.me/MehsenD">در تلگرام پیام دهید</a></p>
+  </div>
 </body>
 </html>
