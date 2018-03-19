@@ -3,6 +3,7 @@
 	<title>Live Radio</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.rawgit.com/rastikerdar/vazir-font/v18.0.0/dist/font-face.css" rel="stylesheet" type="text/css" />
 	<style>
 		body {
 			background-color: #2D2D2D;
@@ -12,27 +13,29 @@
 		h1 {
 			color: #eee;
 			font-size: 30px;
-			font-family: Open Sans, Arial, Sans, fixed-width;
+			font-family: 'vazir', vazir, Open Sans, Arial, Sans, fixed-width;
 		}
 		
 		p {
 			color: white;
-			font-family: Open Sans, Arial, Sans, fixed-width;
+			font-family: 'vazir', vazir, Open Sans, Arial, Sans, fixed-width;
 		}
 		a {
-			color: #C26356;
+			color: #1DA1F2;
+			text-decoration: none;
 		}
 	</style>
 </head>
 <body>
   <div style="width: 200px; max-width: 90%; margin: auto;">
 	<h1 style="margin-top: 3rem; text-align: center;">پخش زنده برنامه رادیویی</h1>
-	<p style="margin-top: 3rem; text-align: center;">#رادیوشیفت‌شب</p>
+	<p style="margin-top: 3rem; text-align: center;"><a href="https://twitter.com/search?f=tweets&q=%23%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%D8%B4%DB%8C%D9%81%D8%AA%E2%80%8C%D8%B4%D8%A8">#رادیوشیفت‌شب</a></p>
 	<audio preload="auto" controls>
-	  <source src="http://162.223.94.227:8000/live.mp3" type="audio/mpeg">
+	  <source src="http://one.infrastructure.kary.us/audio-server/live.opus" type="audio/ogg; codecs=opus">
 	Your browser does not support the audio element.
 	</audio>
 	<p><a href="https://t.me/MehsenD">تو تلگرام پیام بدید</a></p>
+	<p><a href="https://twitter.com/mehsendz">تو توییتر پیام بدید</a></p>
   </div>
 </body>
 </html>
