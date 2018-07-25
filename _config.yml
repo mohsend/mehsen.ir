@@ -33,7 +33,7 @@ texts:
   back_home:        "بازگشت به خانه" # Back to Home
   back:             "بازگشت" # Back
   see_more:         "دیدن باقی..." # See More Posts
-  posts:            "سه پست آخر:" # Posts:
+  posts:            "ده پست آخر:" # Posts:
 
 # Site Settings
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
