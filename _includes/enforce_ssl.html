@@ -1,0 +1,8 @@
+{% if site.enforce_ssl != "" %}
+<script type="text/javascript">
+  // Redirect to https if on enforced_ssl domain
+  var host = "{{ site.enforce_ssl }}";
+  if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script>
+{% endif %}

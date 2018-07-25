@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<noscript>
+	<style>
+
+		article .footnotes {
+			display: block;
+		}
+
+	</style>
+</noscript>
+
+<article>
+
+	<div class="center">
+		<h1>{{ page.title }}</h1>
+		<time>{{ page.date | date: '%B %-d, %Y' }}</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<audio preload="metadata" id="podcast-player" controls>
+		<source src="{{ page.podcast.ogg.file }}" type="audio/ogg">
+		<source src="{{ page.podcast.mp3.file }}" type="audio/mpeg">
+		<source src="{{ page.podcast.opus.file }}" type='audio/ogg; codecs="opus"'>
+		Your browser does not support the audio element. Here's download links: <a href="{{ page.audio.mp3.file }}" download>Download MP3</a> / <a href="{{ page.audio.ogg.file }}" download>Download OGG</a> / <a href="{{ page.audio.opus.file }}" download>Download OPUS</a>
+	</audio>
+	<div id="description">
+	{{ content }}
+	</div>
+</article>
+
+<div class="back">
+	<a href="{{site.baseurl}}/">{{ site.texts.back }}</a>
+</div>
+
+<script>
+var audio = document.getElementById('podcast-player');
+var des = document.getElementById('description');
+
+des.innerHTML = des.innerHTML.replace(/\d\d:\d\d/g, function (x) {
+  var a = x.split(':');
+  var seconds;
+  if (a.length == 2) {
+    seconds = (+a[0]) * 60 + (+a[1]); 
+  } else if (a.length == 3) {
+    seconds = (+a[0]) * 60 * 60 + (+a[1]) * 60 + (+a[2]); 
+  }
+  return '<a href="#' + seconds + '">' + x + '</a>';
+});
+
+window.addEventListener("hashchange", function () {
+  audio.currentTime = parseInt(window.location.hash.slice(1));
+  audio.play();
+});
+</script>

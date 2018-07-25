@@ -1,0 +1,24 @@
+{
+  "name": "the_plain_assets",
+  "homepage": "https://github.com/mohsend/the-plain",
+  "authors": [
+    "Mohsen Dastjerdi Zade <me@mehsen.com>"
+  ],
+  "description": "Assets for 'the plain', the Jekyll theme.",
+  "main": "",
+  "keywords": [
+    "Theme",
+    "Jekyll"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vazir-font": "^4.0.1"
+  }
+}

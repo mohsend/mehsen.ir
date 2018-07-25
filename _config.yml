@@ -1,0 +1,87 @@
+# Site Info
+title:              "مِحسن"
+description:        "جایی برای حرف ها"
+google_site_verification: Js3PpS0Bi0tAOlCK9zV-uu0W-LB4xujWT2aPvkX8p5I # Put your Google Verification here
+google_analytics: 
+
+# Author Info
+author:
+  name:        "محسن دستجردی زاده"
+  email:       me@mehsen.com
+  gravatar:    452cc758d1fe02811a25bb84c2fecb5e # Gravatar md5 hash
+  twitter:     dstjrd
+
+# Social networks (contact)
+social:
+  -
+    name: توییتر
+    url: https://twitter.com/dstjrd
+    font_awesome: twitter-square
+  -
+    name: ایمیل
+    url: mailto:me@mehsen.com
+    font_awesome: envelope
+  -
+    name: پادکست
+    url: /podcast.xml
+    font_awesome: envelope
+    
+
+# Site texts
+texts:
+  about_author:     "درباره نویسنده" # About The Author
+  back_home:        "بازگشت به خانه" # Back to Home
+  back:             "بازگشت" # Back
+  see_more:         "دیدن باقی..." # See More Posts
+  posts:            "سه پست آخر:" # Posts:
+
+# Site Settings
+baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
+permalink:          /notes/:title # Post permalink
+enforce_ssl:        "" # Leave empty if your domain doesn't have https, write the domain if it has
+timezone:           Asia/Tehran # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+date_format:        "%b %d, %Y"
+direction:          rtl # Text direction. ltr/rtl
+lang:               fa # http://www.w3schools.com/tags/ref_language_codes.asp
+header_image:       "gravatar" # "gravatar" or url to an image
+
+# Site Build
+highlighter:        rouge
+#markdown:           redcarpet
+#redcarpet:
+#    extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "footnotes"]
+markdown:           kramdown
+kramdown:
+    input:          GFM
+sass:
+    style:          :compressed
+
+# Other Params
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+compress_html:
+    clippings:      all
+    ingore:
+        envs:       [ "test" ]
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
