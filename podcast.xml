@@ -43,7 +43,7 @@ image: '/public/meh-wback.png'
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
 				<enclosure url="{{ post.podcast.mp3.file }}" length="{{ post.podcast.mp3.size }}" type="audio/mp3"/>
 				<enclosure url="{{ post.podcast.ogg.file }}" length="{{ post.podcast.ogg.size }}" type="audio/ogg"/>
-				<itunes:author>{{ site.author }}</itunes:author>
+				<itunes:author>{{ site.author.name }}</itunes:author>
 				<itunes:subtitle>{{ site.title }}: {{ post.title }}</itunes:subtitle>
 				<itunes:summary>{{ post.podcast.summary | xml_escape }}</itunes:summary>
 				<itunes:duration>{{ post.podcast.duration }}</itunes:duration>
