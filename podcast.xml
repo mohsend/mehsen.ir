@@ -1,6 +1,5 @@
 ---
-layout: null
-image: '/public/meh-wback.png'
+layout: compress
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xml:lang="{{ site.lang }}">
@@ -17,7 +16,7 @@ image: '/public/meh-wback.png'
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<image>
 			<link>{{ site.url }}</link>
-			<url>{{ site.url }}/public/meh-wback.png</url>
+			<url>{{ site.url }}</url>
 			<title>{{ site.title }}</title>
 		</image>
 		<itunes:subtitle>{{ site.description | strip_html |  xml_escape }}</itunes:subtitle>
@@ -28,21 +27,31 @@ image: '/public/meh-wback.png'
 			<itunes:name>{{ site.author.name }}</itunes:name>
 			<itunes:email>{{ site.author.email }}</itunes:email>
 		</itunes:owner>
-		<itunes:image href="{{ site.url }}{{ page.image }}" />
+		<itunes:image href="{{ site.url }}{{ site.podcast.cover_art }}" />
 		<itunes:category text="Society &amp; Culture">
 			<itunes:category text="Personal Journals" />
 		</itunes:category>
 		<itunes:explicit>no</itunes:explicit>
 		{% for post in site.posts %}
 			{% if post.layout == 'podcast' %}
+			{% if site.podcast.statistics_prefix %}
+				{% assign mp3 = post.podcast.mp3.file | remove_first: 'https://' | remove_first: 'http://' | prepend: site.podcast.statistics_prefix %}
+				{% assign ogg = post.podcast.ogg.file | remove_first: 'https://' | remove_first: 'http://' | prepend: site.podcast.statistics_prefix %}
+				{% assign opus = post.podcast.opus.file | remove_first: 'https://' | remove_first: 'http://' | prepend: site.podcast.statistics_prefix %}
+			{% else %}
+				{% assign mp3 = post.podcast.mp3.file %}
+				{% assign ogg = post.podcast.opus.file %}
+				{% assign opus = post.podcast.opus.file %}
+			{% endif %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
 				<link>{{ site.url }}{{ post.url }}</link>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<description>{{ post.content | xml_escape }}</description>
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-				<enclosure url="{{ post.podcast.mp3.file }}" length="{{ post.podcast.mp3.size }}" type="audio/mp3"/>
-				<enclosure url="{{ post.podcast.ogg.file }}" length="{{ post.podcast.ogg.size }}" type="audio/ogg"/>
+				<enclosure url="{{ mp3 }}" length="{{ post.podcast.mp3.size }}" type="audio/mp3"/>
+				<enclosure url="{{ ogg }}" length="{{ post.podcast.ogg.size }}" type="audio/ogg; codecs=vorbis"/>
+				<enclosure url="{{ opus }}" length="{{ post.podcast.opus.size }}" type="audio/ogg; codecs=opus"/>
 				<itunes:author>{{ site.author.name }}</itunes:author>
 				<itunes:subtitle>{{ site.title }}: {{ post.title }}</itunes:subtitle>
 				<itunes:summary>{{ post.podcast.summary | xml_escape }}</itunes:summary>

@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <noscript>
 	<style>
 
@@ -18,14 +17,21 @@ layout: default
 		<h1>{{ page.title }}</h1>
 		<time>{{ page.date | date: '%B %-d, %Y' }}</time>
 	</div>
-
+	{% if site.podcast.statistics_prefix %}
+		{% assign mp3 = page.podcast.mp3.file | remove_first: 'https://' | remove_first: 'http://' | prepend: site.podcast.statistics_prefix %}
+		{% assign ogg = page.podcast.ogg.file | remove_first: 'https://' | remove_first: 'http://' | prepend: site.podcast.statistics_prefix %}
+		{% assign opus = page.podcast.opus.file | remove_first: 'https://' | remove_first: 'http://' | prepend: site.podcast.statistics_prefix %}
+	{% else %}
+		{% assign mp3 = page.podcast.mp3.file %}
+		{% assign ogg = page.podcast.opus.file %}
+		{% assign opus = page.podcast.opus.file %}
+	{% endif %}
 	<div class="divider"></div>
-
 	<audio preload="metadata" id="podcast-player" controls>
-		<source src="{{ page.podcast.ogg.file }}" type="audio/ogg">
-		<source src="{{ page.podcast.mp3.file }}" type="audio/mpeg">
-		<source src="{{ page.podcast.opus.file }}" type='audio/ogg; codecs="opus"'>
-		Your browser does not support the audio element. Here's download links: <a href="{{ page.audio.mp3.file }}" download>Download MP3</a> / <a href="{{ page.audio.ogg.file }}" download>Download OGG</a> / <a href="{{ page.audio.opus.file }}" download>Download OPUS</a>
+		<source src="{{ opus }}" type="audio/ogg; codecs=opus">
+		<source src="{{ ogg }}" type="audio/ogg; codecs=vorbis">
+		<source src="{{ mp3 }}" type="audio/mpeg">
+		Your browser does not support the audio element. Here's download links: <a href="{{ mp3 }}" length="{{ page.podcast.mp3.size }}" download>Download MP3</a> / <a href="{{ ogg }}" download>Download OGG</a> / <a href="{{ opus }}" download>Download OPUS</a>
 	</audio>
 	<div id="description">
 	{{ content }}

@@ -25,7 +25,11 @@ social:
     name: پادکست
     url: https://www.blubrry.com/mehsen/
     font_awesome: envelope
-    
+
+# Podcast config
+podcast:
+  coverart: /public/podcast-cover.jpg
+  statistics_prefix: http://media.blubrry.com/mehsen/
 
 # Site texts
 texts:
