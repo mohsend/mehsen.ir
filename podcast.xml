@@ -21,7 +21,7 @@ image: '/public/meh-wback.png'
 			<title>{{ site.title }}</title>
 		</image>
 		<itunes:subtitle>{{ site.description | strip_html |  xml_escape }}</itunes:subtitle>
-		<itunes:author>{{ site.author }}</itunes:author>
+		<itunes:author>{{ site.author.name }}</itunes:author>
 		<itunes:summary>{{ site.description | strip_html | xml_escape }}</itunes:summary>
 		<itunes:keywords>{{ site.keywords }}</itunes:keywords>
 		<itunes:owner>
