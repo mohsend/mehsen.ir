@@ -11,7 +11,7 @@ layout: compress
 		<language>{{ site.lang }}</language>
 		<managingEditor>{{ site.author.email }} ({{ site.author.name }})</managingEditor>
 		<webMaster>{{ site.author.email }} ({{ site.author.name }})</webMaster>
-		<copyright>2016-{{ 'now' | date: "%Y" }} CreativeCommons Attribution 4.0 International - {{ site.title }}</copyright>
+		<copyright>2018-{{ 'now' | date: "%Y" }} CreativeCommons Attribution 4.0 International - {{ site.title }}</copyright>
 		<pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<image>
