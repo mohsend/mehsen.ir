@@ -37,11 +37,9 @@ layout: compress
 			{% if site.podcast.statistics_prefix %}
 				{% assign mp3 = post.podcast.mp3.file | remove_first: 'https://' | remove_first: 'http://' | prepend: site.podcast.statistics_prefix %}
 				{% assign ogg = post.podcast.ogg.file | remove_first: 'https://' | remove_first: 'http://' | prepend: site.podcast.statistics_prefix %}
-				{% assign opus = post.podcast.opus.file | remove_first: 'https://' | remove_first: 'http://' | prepend: site.podcast.statistics_prefix %}
 			{% else %}
 				{% assign mp3 = post.podcast.mp3.file %}
 				{% assign ogg = post.podcast.opus.file %}
-				{% assign opus = post.podcast.opus.file %}
 			{% endif %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
@@ -51,7 +49,6 @@ layout: compress
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
 				<enclosure url="{{ mp3 }}" length="{{ post.podcast.mp3.size }}" type="audio/mp3"/>
 				<enclosure url="{{ ogg }}" length="{{ post.podcast.ogg.size }}" type="audio/ogg; codecs=vorbis"/>
-				<enclosure url="{{ opus }}" length="{{ post.podcast.opus.size }}" type="audio/ogg; codecs=opus"/>
 				<itunes:author>{{ site.author.name }}</itunes:author>
 				<itunes:subtitle>{{ site.title }}: {{ post.title }}</itunes:subtitle>
 				<itunes:summary>{{ post.podcast.summary | xml_escape }}</itunes:summary>
