@@ -17,7 +17,7 @@ layout: default
 
 			<li>
 				<div class="title">
-					<a href="{{ post.url | prepend: site.baseurl }}">{% if post.podcast %}&#x1f50a; {% endif %}{{ post.title }}</a>
+					<a href="{{ post.url | prepend: site.baseurl }}">{% if post.podcast %}<format title="Podcast">&#128362; </format>{% endif %}{{ post.title }}</a>
 				</div>
 			</li>
 			{% if forloop.index == 10 %}
