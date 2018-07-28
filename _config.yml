@@ -47,7 +47,7 @@ timezone:           Asia/Tehran # https://en.wikipedia.org/wiki/List_of_tz_datab
 date_format:        "%b %d, %Y"
 direction:          rtl # Text direction. ltr/rtl
 lang:               fa # http://www.w3schools.com/tags/ref_language_codes.asp
-header_image:       /public/meh-wback-512px.png # "gravatar" or url to an image
+header_image:       /public/favicon/apple-touch-icon.png # "gravatar" or url to an image
 
 # Site Build
 highlighter:        rouge
