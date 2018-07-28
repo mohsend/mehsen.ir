@@ -1,12 +1,19 @@
 ---
 layout: page
-title: About
+title: درباره محسن
 ---
 
-Hello.
+سلام. محسن دستجردی زاده هستم.
 
-The main purpose of this theme is to be as simple as it could be, so you can focus on writing your stuffs. This is your About page. You may describe about yourself here; who you are, what are you currently doing, share some of your projects, your social links and how people can contact you, etc.
+[ایمیل](mailto:me@mehsen.com) &middot;
+[گیت‌هاب](https://github.com/mohsend/) &middot;
+[کانال تلگرام](https://t.me/mehsen_com/) &middot;
+[یوتوب](https://www.youtube.com/channel/UC042DJhjdsKnTmKKOwdmGjg) &middot;
+[توییتر](https://twitter.com/dstjrd/) &middot;
+[گودریدز](https://www.goodreads.com/mohsend/) &middot;
+[اینستاگرام](https://www.instagram.com/mehsend/) &middot;
+[فلیکر](https://www.flickr.com/photos/mehsen/) &middot;
+[تلگرام](https://t.me/mehsend/) &middot;
+[آرکایو](https://archive.org/details/@mehsen) &middot;
+[فری‌ساوند](https://freesound.org/people/mehsen/) 
 
-**Just write thing that matters..**
-
-Enjoy!
