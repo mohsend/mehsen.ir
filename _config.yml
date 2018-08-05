@@ -25,6 +25,9 @@ social:
     name: پادکست
     url: https://www.blubrry.com/mehsen/
     font_awesome: podcast
+  -
+    name: English
+    url: https://mehsen.com
 
 # Podcast config
 podcast:
