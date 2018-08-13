@@ -382,3 +382,27 @@ nav {
 audio {
   width: 100%;
 }
+
+.podcast-post::before {
+  content: "\1f56a  ";
+}
+
+.video-post::before {
+  content: "\1f4fa  ";
+}
+
+.youtube-thumbnail {
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  width: 100%;
+  &:hover .youtube-logo-overlay {
+    fill: #FF0000;
+  }
+}
+
+.youtube-logo-overlay {
+  fill: #282828;
+  width: 28%;
+  padding: 14% 0;
+}

@@ -14,10 +14,15 @@ layout: default
 	<h3><a href="posts.html">{{ site.texts.posts }}</a></h3>
 	<ul>
 		{% for post in site.posts %}
+		{% if post.podcast %}
+			{% assign ptype = 'title="پادکست صوتی" class="podcast-post"' %}
+		{% else if post.layout == 'youtube' %}
+			{% assign ptype = 'title="ویدیو" class="video-post"' %}
+		{% endif %}
 
 			<li>
 				<div class="title">
-					<a href="{{ post.url | prepend: site.baseurl }}">{% if post.podcast %}<format title="Podcast">&#128362; </format>{% endif %}{{ post.title }}</a>
+					<a href="{{ post.url | prepend: site.baseurl }}" {{ ptype }}>{{ post.title }}</a>
 				</div>
 			</li>
 			{% if forloop.index == 10 %}
