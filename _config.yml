@@ -51,6 +51,7 @@ date_format:        "%b %d, %Y"
 direction:          rtl # Text direction. ltr/rtl
 lang:               fa # http://www.w3schools.com/tags/ref_language_codes.asp
 header_image:       /public/favicon/apple-touch-icon.png # "gravatar" or url to an image
+disqus: 'mehsen'
 
 # Site Build
 highlighter:        rouge

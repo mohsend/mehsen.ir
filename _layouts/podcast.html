@@ -17,26 +17,38 @@ layout: default
 		<h1>{{ page.title }}</h1>
 		<time>{{ page.date | date: '%B %-d, %Y' }}</time>
 	</div>
+	{% if page.podcast.mp3.file  %} {% assign mp3  = page.podcast.mp3.file  %} {% endif %}
+	{% if page.podcast.ogg.file  %} {% assign ogg  = page.podcast.ogg.file  %} {% endif %}
+	{% if page.podcast.opus.file %} {% assign opus = page.podcast.opus.file %} {% endif %}
+	{% if page.podcast.aac.file  %} {% assign aac  = page.podcast.aac.file  %} {% endif %}
+
 	{% if site.podcast.statistics_prefix %}
-		{% assign mp3 = page.podcast.mp3.file | remove_first: 'https://' | remove_first: 'http://' | prepend: site.podcast.statistics_prefix %}
-		{% assign ogg = page.podcast.ogg.file | remove_first: 'https://' | remove_first: 'http://' | prepend: site.podcast.statistics_prefix %}
-		{% assign opus = page.podcast.opus.file | remove_first: 'https://' | remove_first: 'http://' | prepend: site.podcast.statistics_prefix %}
-	{% else %}
-		{% assign mp3 = page.podcast.mp3.file %}
-		{% assign ogg = page.podcast.opus.file %}
-		{% assign opus = page.podcast.opus.file %}
+		{% assign prefix = site.podcast.statistics_prefix %}
+		{% if mp3  %} {% assign mp3  = mp3  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
+		{% if ogg  %} {% assign ogg  = ogg  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
+		{% if opus %} {% assign opus = opus | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
+		{% if aac  %} {% assign aac  = aac  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
 	{% endif %}
+
 	<div class="divider"></div>
 	<audio preload="metadata" id="podcast-player" controls>
+		{% if opus %}
 		<source src="{{ opus }}" type="audio/ogg; codecs=opus">
+		{% endif %}{% if ogg  %}
 		<source src="{{ ogg }}" type="audio/ogg; codecs=vorbis">
+		{% endif %}{% if mp3  %}
 		<source src="{{ mp3 }}" type="audio/mpeg">
-		Your browser does not support the audio element. Here's download links: <a href="{{ mp3 }}" length="{{ page.podcast.mp3.size }}" download>Download MP3</a> / <a href="{{ ogg }}" download>Download OGG</a> / <a href="{{ opus }}" download>Download OPUS</a>
+		{% endif %}{% if aac %}
+		<source src="{{ aac }}" type="audio/mp4">
+		{% endif %}
+		Your browser does not support the audio element. Here's download links: {% if mp3 %}<a href="{{ mp3 }}" download>Download MP3</a> / {% endif %}{% if aac %}<a href="{{ aac }}" download>Download AAC</a> / {% endif %}{% if ogg %}<a href="{{ ogg }}" download>Download OGG</a> / {% endif %}{% if opus %}<a href="{{ opus }}" download>Download OPUS</a>{% endif %}
 	</audio>
 	<div id="description">
 	{{ content }}
 	</div>
 </article>
+
+{% include disqus.html %}
 
 <div class="back">
 	<a href="{{site.baseurl}}/">{{ site.texts.back }}</a>
