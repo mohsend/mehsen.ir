@@ -8,7 +8,7 @@ google_analytics:
 author:
   name:        "محسن دستجردی زاده"
   email:       me@mehsen.com
-  gravatar:    452cc758d1fe02811a25bb84c2fecb5e # Gravatar md5 hash
+  gravatar:    452cc758d1fe02811a25bb84c2fecb5e # Gravatar md5 hash (http://www.miraclesalad.com/webtools/md5.php)
   twitter:     dstjrd
 
 # Social networks (contact)
@@ -40,7 +40,7 @@ texts:
   back_home:        "بازگشت به خانه" # Back to Home
   back:             "بازگشت" # Back
   see_more:         "دیدن باقی..." # See More Posts
-  posts:            "ده پست آخر:" # Posts:
+  posts:            "ده پست آخر:" # Last <home_post_count> posts
 
 # Site Settings
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
@@ -51,13 +51,11 @@ date_format:        "%b %d, %Y"
 direction:          rtl # Text direction. ltr/rtl
 lang:               fa # http://www.w3schools.com/tags/ref_language_codes.asp
 header_image:       /public/favicon/apple-touch-icon.png # "gravatar" or url to an image
-disqus: 'mehsen'
+home_post_count:    10
+disqus:             'mehsen'
 
 # Site Build
 highlighter:        rouge
-#markdown:           redcarpet
-#redcarpet:
-#    extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "footnotes"]
 markdown:           kramdown
 kramdown:
     input:          GFM

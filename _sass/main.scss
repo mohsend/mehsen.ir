@@ -406,3 +406,29 @@ audio {
   width: 28%;
   padding: 14% 0;
 }
+
+button {
+  background-color: #00d1b2;
+  border-color: transparent;
+  border-width: 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(.375em - 1px);
+  padding-left: .75em;
+  padding-right: .75em;
+  padding-top: calc(.375em - 1px);
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  &:hover {
+    background-color: #00c4a7;
+  }
+}
+
+#disqus_thread {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 1em;
+}

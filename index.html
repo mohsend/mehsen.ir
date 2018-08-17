@@ -25,7 +25,7 @@ layout: default
 					<a href="{{ post.url | prepend: site.baseurl }}" {{ ptype }}>{{ post.title }}</a>
 				</div>
 			</li>
-			{% if forloop.index == 10 %}
+			{% if forloop.index == site.home_post_count %}
 			<li>
 				<div class="title">
 					<a href="posts.html">{{ site.texts.see_more }}</a>
