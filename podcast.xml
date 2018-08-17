@@ -35,38 +35,38 @@ layout: compress
 		{% for post in site.posts %}
 			{% if post.layout == 'podcast' %}
 
-			{% if page.podcast.mp3.file  %} {% assign mp3  = page.podcast.mp3.file  %} {% endif %}
-			{% if page.podcast.ogg.file  %} {% assign ogg  = page.podcast.ogg.file  %} {% endif %}
-			{% if page.podcast.opus.file %} {% assign opus = page.podcast.opus.file %} {% endif %}
-			{% if page.podcast.aac.file  %} {% assign aac  = page.podcast.aac.file  %} {% endif %}
+				{% if post.podcast.mp3.file  %} {% assign mp3  = post.podcast.mp3.file  %} {% endif %}
+				{% if post.podcast.ogg.file  %} {% assign ogg  = post.podcast.ogg.file  %} {% endif %}
+				{% if post.podcast.opus.file %} {% assign opus = post.podcast.opus.file %} {% endif %}
+				{% if post.podcast.aac.file  %} {% assign aac  = post.podcast.aac.file  %} {% endif %}
 
-			{% if site.podcast.statistics_prefix %}
-				{% assign prefix = site.podcast.statistics_prefix %}
-				{% if mp3  %} {% assign mp3  = mp3  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
-				{% if ogg  %} {% assign ogg  = ogg  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
-				{% if opus %} {% assign opus = opus | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
-				{% if aac  %} {% assign aac  = aac  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
-			{% endif %}
-			<item>
-				<title>{{ post.title | xml_escape }}</title>
-				<link>{{ site.url }}{{ post.url }}</link>
-				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-				<description>{{ post.content | xml_escape }}</description>
-				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-				{% if aac  %}<enclosure url="{{ aac }}" length="{{ post.podcast.aac.size }}" type="audio/mp4"/>{% endif %}
-				{% if mp3  %}<enclosure url="{{ mp3 }}" length="{{ post.podcast.mp3.size }}" type="audio/mp3"/>{% endif %}
-				{% if opus  %}<enclosure url="{{ opus }}" length="{{ post.podcast.opus.size }}" type="audio/ogg; codecs=opus"/>{% endif %}
-				{% if ogg  %}<enclosure url="{{ ogg }}" length="{{ post.podcast.ogg.size }}" type="audio/ogg; codecs=vorbis"/>{% endif %}
-				
-				<itunes:author>{{ site.author.name }}</itunes:author>
-				<itunes:subtitle>{{ site.title }}: {{ post.title }}</itunes:subtitle>
-				<itunes:summary>{{ post.podcast.summary | xml_escape }}</itunes:summary>
-				<itunes:duration>{{ post.podcast.duration }}</itunes:duration>
-				<itunes:keywords>{{ post.podcast.keywords }}</itunes:keywords>
-				<itunes:image href="{{ site.url }}{{ post.podcast.image }}" />
-				<itunes:explicit>{{ post.podcast.explicit | default: "no" }}</itunes:explicit>
-				<itunes:block>{{ post.podcast.block | default: "no" }}</itunes:block>
-			</item>
+				{% if site.podcast.statistics_prefix %}
+					{% assign prefix = site.podcast.statistics_prefix %}
+					{% if mp3  %} {% assign mp3  = mp3  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
+					{% if ogg  %} {% assign ogg  = ogg  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
+					{% if opus %} {% assign opus = opus | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
+					{% if aac  %} {% assign aac  = aac  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
+				{% endif %}
+				<item>
+					<title>{{ post.title | xml_escape }}</title>
+					<link>{{ site.url }}{{ post.url }}</link>
+					<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+					<description>{{ post.content | xml_escape }}</description>
+					<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+					{% if aac  %}<enclosure url="{{ aac }}" length="{{ post.podcast.aac.size }}" type="audio/mp4"/>{% endif %}
+					{% if mp3  %}<enclosure url="{{ mp3 }}" length="{{ post.podcast.mp3.size }}" type="audio/mp3"/>{% endif %}
+					{% if opus  %}<enclosure url="{{ opus }}" length="{{ post.podcast.opus.size }}" type="audio/ogg; codecs=opus"/>{% endif %}
+					{% if ogg  %}<enclosure url="{{ ogg }}" length="{{ post.podcast.ogg.size }}" type="audio/ogg; codecs=vorbis"/>{% endif %}
+					
+					<itunes:author>{{ site.author.name }}</itunes:author>
+					<itunes:subtitle>{{ site.title }}: {{ post.title }}</itunes:subtitle>
+					<itunes:summary>{{ post.podcast.summary | xml_escape }}</itunes:summary>
+					<itunes:duration>{{ post.podcast.duration }}</itunes:duration>
+					<itunes:keywords>{{ post.podcast.keywords }}</itunes:keywords>
+					<itunes:image href="{{ site.url }}{{ post.podcast.image }}" />
+					<itunes:explicit>{{ post.podcast.explicit | default: "no" }}</itunes:explicit>
+					<itunes:block>{{ post.podcast.block | default: "no" }}</itunes:block>
+				</item>
 			{% endif %}
 		{% endfor %}
 	</channel>
