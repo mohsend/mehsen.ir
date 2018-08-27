@@ -48,7 +48,7 @@ ajax_get(status_url, function(data) {
     if (data["icestats"]["source"]) {
         var started_milis_ago = Date.now() - Date.parse(data["icestats"]["source"]["stream_start_iso8601"]);
             var html = "<p>" + "در حال پخش زنده!" + "</p>"; 
-        html += '<audio controls><source src="' + data["icestats"]["source"]["listenurl"] + '"></audio>';
+        html += '<audio controls preload="none"><source src="' + data["icestats"]["source"]["listenurl"] + '"></audio>';
         html += "<p>" + "تعداد شنوندگان: " + '<span id = "listeners">' + data["icestats"]["source"]["listeners"].toString().toFaDigit() + '</span>' + " نفر" + "</p>";
         html += "<p>" + "شروع پخش: " + '<span id = "started-mins-ago">' + Math.floor(started_milis_ago / 60000).toString().toFaDigit() + '</span>' + " دقیقه پیش" + "</p>";
         document.getElementById("stream").innerHTML = html;
@@ -61,7 +61,7 @@ ajax_get(status_url, function(data) {
 setInterval(function(){ 
 ajax_get(status_url, function(data) {
     if (data["icestats"]["source"]) {
-        document.getElementById("listeners").innerHTML = data["icestats"]["source"]["listeners"];
+        document.getElementById("listeners").innerHTML = data["icestats"]["source"]["listeners"].toString().toFaDigit();
         var started_milis_ago = Date.now() - Date.parse(data["icestats"]["source"]["stream_start_iso8601"]);
         document.getElementById("started-mins-ago").innerHTML = Math.floor(started_milis_ago / 60000).toString().toFaDigit();
     }
