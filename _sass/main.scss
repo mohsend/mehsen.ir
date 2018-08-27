@@ -432,3 +432,12 @@ button {
   border-top: 1px solid #ccc;
   padding-top: 1em;
 }
+
+.player-container {
+  img {
+   border-radius: 5%;
+  }
+  audio {
+    width: 100%;
+  }
+}
