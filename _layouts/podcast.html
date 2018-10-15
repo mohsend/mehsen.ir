@@ -49,6 +49,9 @@ layout: default
 	<div id="description">
 	{{ content }}
 	</div>
+	<div id="downloads">
+	دانلود: {% if mp3 %}<a href="{{ mp3 }}" download>MP3</a> / {% endif %}{% if aac %}<a href="{{ aac }}" download>AAC</a> / {% endif %}{% if ogg %}<a href="{{ ogg }}" download>OGG Vorbis</a> / {% endif %}{% if opus %}<a href="{{ opus }}" download>OPUS</a>{% endif %}
+	</div>
 </article>
 
 {% include disqus.html %}
