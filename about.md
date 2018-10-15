@@ -9,6 +9,7 @@ title: درباره محسن
 [گیت‌هاب](https://github.com/mohsend/) &middot;
 [کانال تلگرام](https://t.me/mehsen_com/) &middot;
 [یوتوب](https://www.youtube.com/channel/UC042DJhjdsKnTmKKOwdmGjg) &middot;
+[آپارات](https://www.aparat.com/mehsend) &middot;
 [توییتر](https://twitter.com/dstjrd/) &middot;
 [گودریدز](https://www.goodreads.com/mohsend/) &middot;
 [اینستاگرام](https://www.instagram.com/mehsend/) &middot;

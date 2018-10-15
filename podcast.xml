@@ -59,7 +59,7 @@ layout: compress
 					{% if ogg  %}<enclosure url="{{ ogg }}" length="{{ post.podcast.ogg.size }}" type="audio/ogg; codecs=vorbis"/>{% endif %}
 					
 					<itunes:author>{{ site.author.name }}</itunes:author>
-					<itunes:subtitle>{{ site.title }}: {{ post.title }}</itunes:subtitle>
+					<itunes:subtitle>{{ post.podcast.summary | xml_escape }}</itunes:subtitle>
 					<itunes:summary>{{ post.podcast.summary | xml_escape }}</itunes:summary>
 					<itunes:duration>{{ post.podcast.duration }}</itunes:duration>
 					<itunes:keywords>{{ post.podcast.keywords }}</itunes:keywords>
