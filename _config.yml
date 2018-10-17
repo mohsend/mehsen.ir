@@ -23,7 +23,7 @@ social:
     font_awesome: envelope
   -
     name: پادکست
-    url: /podcast
+    url: /subscribe
     font_awesome: podcast
   -
     name: English
