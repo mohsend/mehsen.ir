@@ -23,7 +23,7 @@ social:
     font_awesome: envelope
   -
     name: پادکست
-    url: https://itunes.apple.com/us/podcast/%D9%85-%D8%AD%D8%B3%D9%86/id1431035380
+    url: /podcast
     font_awesome: podcast
   -
     name: English
@@ -65,7 +65,7 @@ sass:
 # Other Params
 include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
