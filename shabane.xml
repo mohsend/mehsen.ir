@@ -5,8 +5,8 @@ layout: compress
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xml:lang="{{ site.lang }}">
 	<channel>
 		<atom:link href="{{ site.url }}/shabane.xml" rel="self" type="application/rss+xml" />
-		<title>{{ site.title }}</title>
-		<description>{{ site.description | strip_html | xml_escape }}</description>
+		<title>شبانه</title>
+		<description>قصد دارم برای تمرین صحبت کردن با شما هر شب مدتی رو جلوی میکروفن روشن بدون آمادگی و هدف صحبت کنم. قسمت های جالب تر اش رو بعد از ویرایش اینجا می‌گذارم. «شبانه» به خاطر ریتم کند و بی هدف بودن، شاید براتون لالایی مناسبی بشه.</description>
 		<link>{{ site.url }}</link>
 		<language>{{ site.lang }}</language>
 		<managingEditor>{{ site.author.email }} ({{ site.author.name }})</managingEditor>
