@@ -35,10 +35,10 @@ layout: compress
 		{% for post in site.posts %}
 		{% if post.layout == 'podcast' %}
 
-			{% if post.podcast.mp3.file  %} {% assign mp3  = post.podcast.mp3.file  %} {% else %} {% assign mp3   = '' %} {% endif %}
-			{% if post.podcast.ogg.file  %} {% assign ogg  = post.podcast.ogg.file  %} {% else %} {% assign ogg   = '' %} {% endif %}
-			{% if post.podcast.opus.file %} {% assign opus = post.podcast.opus.file %} {% else %} {% assign opus  = '' %} {% endif %}
-			{% if post.podcast.aac.file  %} {% assign aac  = post.podcast.aac.file  %} {% else %} {% assign aac   = '' %} {% endif %}
+			{% if post.podcast.mp3.file  %} {% assign mp3  = post.podcast.mp3.file  %} {% endif %}
+			{% if post.podcast.ogg.file  %} {% assign ogg  = post.podcast.ogg.file  %} {% endif %}
+			{% if post.podcast.opus.file %} {% assign opus = post.podcast.opus.file %} {% endif %}
+			{% if post.podcast.aac.file  %} {% assign aac  = post.podcast.aac.file  %} {% endif %}
 
 			{% if site.podcast.statistics_prefix %}
 				{% assign prefix = site.podcast.statistics_prefix %}
