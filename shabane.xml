@@ -53,8 +53,8 @@ layout: compress
 					<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 					<description>{{ post.content | xml_escape }}</description>
 					<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-					{% if aac  %}<enclosure url="{{ aac }}" length="{{ post.podcast.aac.size }}" type="audio/mp4"/>{% endif %}
 					{% if mp3  %}<enclosure url="{{ mp3 }}" length="{{ post.podcast.mp3.size }}" type="audio/mp3"/>{% endif %}
+					{% if aac  %}<enclosure url="{{ aac }}" length="{{ post.podcast.aac.size }}" type="audio/mp4"/>{% endif %}
 					{% if opus  %}<enclosure url="{{ opus }}" length="{{ post.podcast.opus.size }}" type="audio/ogg; codecs=opus"/>{% endif %}
 					{% if ogg  %}<enclosure url="{{ ogg }}" length="{{ post.podcast.ogg.size }}" type="audio/ogg; codecs=vorbis"/>{% endif %}
 					
