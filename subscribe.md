@@ -11,8 +11,9 @@ title: پادکست
 <div class="center" id="sub">
 	<p><a href="https://itunes.apple.com/us/podcast/%D9%85-%D8%AD%D8%B3%D9%86/id1431035380"><img src="/public/icons/US_UK_Apple_Podcasts_Listen_Badge_RGB.svg" alt="Listen on Apple Podcasts (iTunes)" /></a></p>
 
-	
 	<p><a href="https://www.google.com/podcasts?feed=aHR0cDovL21laHNlbi5pci9wb2RjYXN0LnhtbA%3D%3D"><img src="/public/icons/google_podcasts_badge_svg.svg" alt="Listen on Google Podcasts" /></a></p>
+
+	<p><a href="https://open.spotify.com/show/54tjqNt3yqwImtcnoaJp6J"><img src="/public/icons/badge-spotify.svg" alt="Listen on Spotify" /></a></p>
 
 	<p><a href="http://mehsen.ir/podcast.xml"><img src="/public/icons/rss-feed-badge.svg" alt="Subscribe via RSS Feed" /></a></p>
 
