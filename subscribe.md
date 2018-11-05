@@ -25,16 +25,23 @@ title: پادکست
 
 **Android**:
 [Podcast Addict](https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict)
+&middot; 
+[Spotify](https://play.google.com/store/apps/details?id=com.spotify.music)
 {:.ltr }
 
 **iOS**:
 [Apple Podcasts](https://itunes.apple.com/us/app/podcasts/id525463029?mt=8) &middot; 
 [Overcast](https://itunes.apple.com/us/app/overcast-podcast-player/id888422857?ls=1&mt=8)
+&middot; 
+[Spotify](https://itunes.apple.com/us/app/spotify-music/id324684580)
 {:.ltr }
 
 **Desktop**:
-[Clementine](https://www.clementine-player.org/) &middot; 
+[Clementine](https://www.clementine-player.org/)
+&middot; 
 [iTunes](https://www.apple.com/itunes/)
+&middot; 
+[Spotify](https://www.spotify.com/)
 {:.ltr }
 
 ## فید
