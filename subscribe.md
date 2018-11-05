@@ -25,15 +25,19 @@ title: پادکست
 
 **Android**:
 [Podcast Addict](https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict)
-&middot; 
+&middot;
+[Castbox](https://play.google.com/store/apps/details?id=fm.castbox.audiobook.radio.podcast)
+&middot;
 [Spotify](https://play.google.com/store/apps/details?id=com.spotify.music)
 {:.ltr }
 
 **iOS**:
 [Apple Podcasts](https://itunes.apple.com/us/app/podcasts/id525463029?mt=8) &middot; 
-[Overcast](https://itunes.apple.com/us/app/overcast-podcast-player/id888422857?ls=1&mt=8)
-&middot; 
-[Spotify](https://itunes.apple.com/us/app/spotify-music/id324684580)
+[Castbox](https://itunes.apple.com/app/castbox-radio/id1243410543?mt=8)
+&middot;
+[Overcast](https://itunes.apple.com/us/app/overcast-podcast-player/id888422857?mt=8)
+&middot;
+[Spotify](https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8)
 {:.ltr }
 
 **Desktop**:
