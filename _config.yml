@@ -15,8 +15,8 @@ author:
 # Social networks (contact)
 social:
   -
-    name: توییتر
-    url: https://twitter.com/dstjrd
+    name: درباره
+    url: /about
     font_awesome: twitter-square
   -
     name: ایمیل
