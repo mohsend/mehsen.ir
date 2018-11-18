@@ -24,19 +24,19 @@ title: پادکست
 اگر هنوز اپلیکیشن پادکست محبوب خودتون رو پیدا نکردید، این‌ها گزینه‌های پیشنهادی من هستن:
 
 **Android**:
-[Podcast Addict](https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict)
-&middot;
 [Castbox](https://play.google.com/store/apps/details?id=fm.castbox.audiobook.radio.podcast)
+&middot;
+[Podcast Addict](https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict)
 &middot;
 [Spotify](https://play.google.com/store/apps/details?id=com.spotify.music)
 {:.ltr }
 
 **iOS**:
-[Apple Podcasts](https://itunes.apple.com/us/app/podcasts/id525463029?mt=8) &middot; 
 [Castbox](https://itunes.apple.com/app/castbox-radio/id1243410543?mt=8)
 &middot;
 [Overcast](https://itunes.apple.com/us/app/overcast-podcast-player/id888422857?mt=8)
 &middot;
+[Apple Podcasts](https://itunes.apple.com/us/app/podcasts/id525463029?mt=8) &middot; 
 [Spotify](https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8)
 {:.ltr }
 
@@ -46,6 +46,8 @@ title: پادکست
 [iTunes](https://www.apple.com/itunes/)
 &middot; 
 [Spotify](https://www.spotify.com/)
+&middot; 
+[Castbox](https://castbox.fm/)
 {:.ltr }
 
 ## فید
