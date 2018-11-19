@@ -45,9 +45,9 @@ title: پادکست
 &middot; 
 [iTunes](https://www.apple.com/itunes/)
 &middot; 
-[Spotify](https://www.spotify.com/)
-&middot; 
 [Castbox](https://castbox.fm/)
+&middot; 
+[Spotify](https://www.spotify.com/)
 {:.ltr }
 
 ## فید
