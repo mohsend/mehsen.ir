@@ -395,6 +395,21 @@ audio {
   content: "\1f4fa  ";
 }
 
+.text-post::before {
+  content: "\1F589  ";
+}
+
+.icons {
+  &.inline {
+    height: 0.9em;
+  }
+  &.post-head {
+    height: 1.4em;
+  }
+  margin: 0;
+  border-radius: 0;
+}
+
 .youtube-thumbnail {
   background-repeat: no-repeat;
   background-size: contain;
@@ -450,4 +465,16 @@ button {
   text-align: center;
   font-weight: bold;
   padding: 1em 0;
+}
+
+footer {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: solid 1px #ddd;
+  .license {
+    text-align: center;
+    img {
+      margin: 0;
+    }
+  }
 }

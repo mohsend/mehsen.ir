@@ -15,6 +15,7 @@ layout: default
 
 	<div class="center">
 		<h1>{{ page.title }}</h1>
+		<p>{% include post-links.html link=page.link video=page.video class='post-head' %}</p>
 		<time>{{ page.date | date: '%B %-d, %Y' }}</time>
 	</div>
 	{% if page.podcast.mp3.file  %} {% assign mp3  = page.podcast.mp3.file  %} {% endif %}
@@ -32,7 +33,7 @@ layout: default
 
 	<div class="divider"></div>
 	<div class="player-container">
-	<img src="{{ page.podcast.image | prepend: site.baseurl }}" />
+	<img src="{{ page.podcast.image | default: site.podcast.cover_art | prepend: site.baseurl }}" />
 	<audio preload="metadata" id="podcast-player" controls>
 		{% if opus %}
 		<source src="{{ opus }}" type="audio/ogg; codecs=opus">
