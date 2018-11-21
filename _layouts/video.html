@@ -15,7 +15,7 @@ layout: default
 
 	<div class="center">
 		<h1>{{ page.title }}</h1>
-		<p>{% include post-links.html link=page.link video=page.video class='post-head' %}</p>
+		{% include post-links.html link=page.link video=page.video class='post-head' %}
 		<time>{{ page.date | date: '%B %-d, %Y' }}</time>
 	</div>
 	<div class="divider"></div>

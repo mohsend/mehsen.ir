@@ -1,4 +1,8 @@
+{% if include.class == 'post-head' %}
+<p>
+{% elsif include.class == 'inline' %}
 &nbsp;
+{% endif %}
 {% if include.link %}
 <a href="{{ include.link }}" title="{{ include.link }}"><img src="/public/icons/external-link-icon-black.svg" class="icons {{ include.class }}"></a>
 {% endif %}
@@ -9,4 +13,7 @@
 
 {% if include.video.aparat_id %}
 <a href="https://www.aparat.com/v/{{ include.video.aparat_id }}" title="Aparat"><img src="/public/icons/aparat-icon-black.svg" class="icons {{ include.class }}"></a>
+{% endif %}
+{% if include.class == 'post-head' %}
+</p>
 {% endif %}
