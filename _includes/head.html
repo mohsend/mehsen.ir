@@ -7,6 +7,20 @@
 <title>{{ page.title | default: site.title }}</title>
 
 {% seo title=false %}
+{% if page.podcast.image %}
+  {% assign image = page.podcast.image | prepend: site.url %}
+{% elsif page.featured_image %}
+  {% assign image = page.featured_image | prepend: site.url %}
+{% elsif page.video.youtube_id %}
+  {% assign image = page.video.youtube_id | prepend: 'https://img.youtube.com/vi/' | append: '/mqdefault.jpg' %}
+{% else %}
+  {% assign image = site.header_image | prepend: site.url %}
+{% endif %}
+{% if image %}
+  <meta content="{{ image }}" name="image" />
+  <meta content="{{ image }}" name="og:image" />
+  <meta content="{{ image }}" name="twitter:image:src" />
+{% endif %}
 
 {% include favicons.html %}
 
