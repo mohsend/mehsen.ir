@@ -17,7 +17,6 @@ title: پادکست
 
 	<p><a href="http://mehsen.ir/podcast.xml"><img src="/public/icons/rss-feed-badge.svg" alt="Subscribe via RSS Feed" /></a></p>
 
-	<p><a href="https://play.google.com/music/m/I3p6a7wlud4pabpwlikjltyhorq"><img src="/public/icons/en_badge_web_music.png" alt="Listen on Google Play Music" /></a></p>
 </div>
 
 ## نرم‌افزار پادکست
