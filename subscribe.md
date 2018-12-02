@@ -29,6 +29,8 @@ title: پادکست
 [Podcast Addict](https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict)
 &middot;
 [Spotify](https://play.google.com/store/apps/details?id=com.spotify.music)
+&middot;
+[Google Podcasts](https://play.google.com/store/apps/details?id=com.google.android.apps.podcasts) (از قبل نصب)
 {:.ltr }
 
 **iOS**:
@@ -36,7 +38,8 @@ title: پادکست
 &middot;
 [Overcast](https://itunes.apple.com/us/app/overcast-podcast-player/id888422857?mt=8)
 &middot;
-[Apple Podcasts](https://itunes.apple.com/us/app/podcasts/id525463029?mt=8) &middot; 
+[Apple Podcasts](https://itunes.apple.com/us/app/podcasts/id525463029?mt=8)
+&middot; 
 [Spotify](https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8)
 {:.ltr }
 
