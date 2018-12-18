@@ -27,7 +27,7 @@ layout: compress
 			<itunes:name>{{ site.author.name }}</itunes:name>
 			<itunes:email>{{ site.author.email }}</itunes:email>
 		</itunes:owner>
-		<itunes:image href="{{ site.url }}/public/shabane.jpg" />
+		<itunes:image href="{{ site.url }}/public/shabane-spirit.jpg" />
 		<itunes:category text="Society &amp; Culture">
 			<itunes:category text="Personal Journals" />
 		</itunes:category>
