@@ -27,6 +27,10 @@ social:
     url: /subscribe
     font_awesome: podcast
   -
+    name: حمایت
+    url: /support
+    font_awesome: cash
+  -
     name: English
     url: https://mehsen.com
 
