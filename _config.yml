@@ -58,6 +58,7 @@ lang:               fa # http://www.w3schools.com/tags/ref_language_codes.asp
 header_image:       /public/top.jpg # "gravatar" or url to an image
 home_post_count:    10
 disqus:             'mehsen'
+keywords: "Podcast, Shabane, Persian, پادکست, شبانه, فارسی, پادکست فارسی"
 
 # Site Build
 highlighter:        rouge
