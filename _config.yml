@@ -67,6 +67,7 @@ kramdown:
     input:          GFM
 sass:
     style:          :compressed
+excerpt_separator: <!--more-->
 
 # Other Params
 include:            [ "robots.txt" ]

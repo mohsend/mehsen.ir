@@ -51,7 +51,7 @@ layout: compress
 					<title>{{ post.title | xml_escape }}</title>
 					<link>{{ site.url }}{{ post.url }}</link>
 					<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-					<description>{{ post.content | xml_escape }}</description>
+					<description>{{ post.excerpt | xml_escape }}</description>
 					<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
 					{% if mp3  %}<enclosure url="{{ mp3 }}" length="{{ post.podcast.mp3.size }}" type="audio/mp3"/>{% endif %}
 					{% if aac  %}<enclosure url="{{ aac }}" length="{{ post.podcast.aac.size }}" type="audio/mp4"/>{% endif %}
