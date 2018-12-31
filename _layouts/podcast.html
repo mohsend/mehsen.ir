@@ -34,7 +34,7 @@ layout: default
 	<div class="divider"></div>
 	<div class="player-container">
 	<img src="{{ page.podcast.image | default: site.podcast.cover_art | prepend: site.baseurl }}" />
-	<audio preload="metadata" id="podcast-player" controls>
+	<audio preload="none" id="podcast-player" controls>
 		{% if opus %}
 		<source src="{{ opus }}" type="audio/ogg; codecs=opus">
 		{% endif %}{% if ogg  %}
