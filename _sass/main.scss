@@ -41,7 +41,7 @@ mark {
 }
 
 blockquote {
-  border-left: 5px solid #ccc;
+  border-left: 5px solid #bbb;
   margin: 40px 0;
   padding: 5px 30px;
   background: #eee;
@@ -72,7 +72,7 @@ span[data-note] {
 }
 
 .note {
-  background: #cccccc;
+  background: #ccc;
   border: 1px solid #ddd;
   box-shadow: 0 0 8px rgba( 0, 0, 0, 0.2 );
   padding: 20px 20px 50px;
@@ -265,7 +265,7 @@ article {
   }
   .divider {
     background: #ddd;
-    background: linear-gradient(to right,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+    background: linear-gradient(to right,rgba(255,255,255,0),#bbb,rgba(255,255,255,0));
     height: 1px;
     margin: 2em 0;
   }
@@ -275,7 +275,7 @@ article {
   }
   hr {
     border: 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #bbb;
     margin: 30px 0;
   }
   p {
@@ -448,7 +448,7 @@ button {
 
 #disqus_thread {
   text-align: center;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #bbb;
   padding-top: 1em;
 }
 
