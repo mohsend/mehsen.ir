@@ -12,6 +12,7 @@ title: درباره محسن
 راه‌های ارتباط با من: 
 [ایمیل](mailto:me@mehsen.com) &middot;
 [کانال تلگرام](https://t.me/mehsen_com/) &middot;
+[تلگرام](https://t.me/mehsend/) &middot;
 [یوتوب](https://www.youtube.com/channel/UC042DJhjdsKnTmKKOwdmGjg) &middot;
 [آپارات](https://www.aparat.com/mehsend) &middot;
 [اینستاگرام](https://www.instagram.com/mehsend/) &middot;
@@ -19,9 +20,9 @@ title: درباره محسن
 [گودریدز](https://www.goodreads.com/mohsend/) &middot;
 [فلیکر](https://www.flickr.com/photos/mehsen/) &middot;
 [گیت‌هاب](https://github.com/mohsend/) &middot;
-[تلگرام](https://t.me/mehsend/) &middot;
 [آرکایو](https://archive.org/details/@mehsen) &middot;
-[فری‌ساوند](https://freesound.org/people/mehsen/) 
+[فری‌ساوند](https://freesound.org/people/mehsen/) &middot;
+[آرشیو موسیقی آزاد](http://freemusicarchive.org/member/mehsen)
 
 ---
 
