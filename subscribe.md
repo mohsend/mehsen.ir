@@ -61,3 +61,5 @@ title: پادکست
 همه پادکست ها: [`http://mehsen.ir/podcast.xml`](http://mehsen.ir/podcast.xml)
   
 شبانه: [`http://mehsen.ir/shabane.xml`](http://mehsen.ir/shabane.xml)
+
+گفتگو: [`http://mehsen.ir/goftego.xml`](http://mehsen.ir/goftego.xml)
