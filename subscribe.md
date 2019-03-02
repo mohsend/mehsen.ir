@@ -19,8 +19,11 @@ title: پادکست
 
 	<p><a href="http://mehsen.ir/podcast.xml"><img src="/public/icons/rss-feed-badge.svg" alt="Subscribe via RSS Feed" /></a></p>
 
-	<p><a href="https://play.google.com/music/m/I3p6a7wlud4pabpwlikjltyhorq">Google Play Music</a>  &middot;
-	<a href="https://tunein.com/podcasts/Arts--Culture-Podcasts/Mohsen-p1183187/">TuneIn</a></p>
+	<p>
+		<a href="https://play.google.com/music/m/I3p6a7wlud4pabpwlikjltyhorq">Google Play Music</a>  &middot;
+		<a href="https://tunein.com/podcasts/Arts--Culture-Podcasts/Mohsen-p1183187/">TuneIn</a>  &middot;
+		<a href="https://t.me/mehsen_ir">Telegram</a>
+	</p>
 
 </div>
 
