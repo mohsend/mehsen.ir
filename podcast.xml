@@ -67,7 +67,6 @@ layout: compress
 				<itunes:keywords>{{ post.podcast.keywords }}</itunes:keywords>
 				<itunes:image href="{{ site.url }}{{ post.podcast.image }}" />
 				<itunes:explicit>{{ post.podcast.explicit | default: "no" }}</itunes:explicit>
-				<itunes:episode>{{ post.podcast.episode }}</itunes:episode>
 				<itunes:episodeType>{{ post.podcast.episodeType | default: "full" }}</itunes:episodeType>
 			</item>
 		{% endif %}

@@ -13,7 +13,7 @@ title: پادکست
 
 	<p><a href="https://www.google.com/podcasts?feed=aHR0cDovL21laHNlbi5pci9wb2RjYXN0LnhtbA%3D%3D"><img src="/public/icons/google_podcasts_badge_svg.svg" alt="Listen on Google Podcasts" /></a></p>
 
-	<p><a href="https://castbox.fm/ch/1446853"><img src="/public/icons/castbox.png" alt="Listen on Castbox" /></a></p>
+	<p><a href="https://castbox.fm/channel/id1446853"><img src="/public/icons/castbox.png" alt="Listen on Castbox" /></a></p>
 
 	<p><a href="https://open.spotify.com/show/54tjqNt3yqwImtcnoaJp6J"><img src="/public/icons/spotify-badge.png" alt="Listen on Spotify" /></a></p>
 

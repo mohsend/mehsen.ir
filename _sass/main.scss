@@ -312,7 +312,7 @@ article {
 }
 
 section {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
   ul {
     list-style: none;
@@ -355,7 +355,7 @@ section {
 }
 
 nav {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
   text-align: center;
   a {
@@ -426,7 +426,7 @@ audio {
   padding: 14% 0;
 }
 
-button {
+button, .button {
   background-color: #00d1b2;
   border-color: transparent;
   border-width: 1px;
@@ -443,6 +443,13 @@ button {
   border-radius: 4px;
   &:hover {
     background-color: #00c4a7;
+  }
+}
+
+.castbox {
+  background-color: #FF481A;
+  &:hover {
+    background-color: #FF9852;
   }
 }
 

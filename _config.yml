@@ -15,13 +15,9 @@ author:
 # Social networks (contact)
 social:
   -
-    name: درباره
-    url: /about
+    name: ارتباط
+    url: /contact
     font_awesome: twitter-square
-  -
-    name: ایمیل
-    url: mailto:me@mehsen.com
-    font_awesome: envelope
   -
     name: پادکست
     url: /subscribe
@@ -29,6 +25,10 @@ social:
   -
     name: حمایت
     url: /support
+    font_awesome: cash
+  -
+    name: دوستان
+    url: /favorites
     font_awesome: cash
   -
     name: English
@@ -40,6 +40,7 @@ podcast:
   statistics_prefix: http://media.blubrry.com/mehsen/
   description:        "برای میلیون‌ها سال انسان درست مثل حیوانات زندگی می‌کرد. سپس چیزی اتفاق افتاد که تخیلات ما را از بند رهانید. ما یادگرفتیم حرف بزنیم، یادگرفتیم گوش کنیم. گفتگو تبادل اندیشه‌ها را ممکن ساخت. بشر را قادر کرد با همکاری غیرممکن‌ها را بسازد. بزرگترین دستاوردهای بشریت با حرف زدن انجام شده‌است، و بزرگترین ناکامی‌هایش به دلیل حرف نزدن بوده‌است. لزومی ندارد اینگونه بمانیم. بزرگترین امیدهایمان می‌تواند در آینده بدل به واقعیت شوند. با در اختیار داشتن تکنولوژی، ممکن‌ها بی حد و حصر اند. تنها باید مطمئن شویم که به حرف زدن ادامه خواهیم داد. — استیون هاوکینگ"
   summary: "...تنها باید مطمئن شویم به حرف زدن ادامه خواهیم داد. — استیون هاوکینگ "
+  castbox: "https://castbox.fm/channel/id1446853"
 
 # Site texts
 texts:
