@@ -69,12 +69,6 @@ layout: compress
 				<itunes:explicit>{{ post.podcast.explicit | default: "no" }}</itunes:explicit>
 				<itunes:episode>{{ post.podcast.episode }}</itunes:episode>
 				<itunes:episodeType>{{ post.podcast.episodeType | default: "full" }}</itunes:episodeType>
-				{% if post.podcast.season %}
-				<itunes:season>{{ post.podcast.season }}</itunes:season>
-				{% endif %}
-				{% if post.podcast.block %}
-				<itunes:block>{{ post.podcast.block }}</itunes:block>
-				{% endif %}
 			</item>
 		{% endif %}
 		{% endfor %}
