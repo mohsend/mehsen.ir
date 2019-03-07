@@ -49,7 +49,7 @@ desc: "???"
 					{% if aac  %} {% assign aac  = aac  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
 				{% endif %}
 				<item>
-					<title>{{ post.title | xml_escape }}</title>
+					<title>{{ post.podcast.title | xml_escape }}</title>
 					<link>{{ site.url }}{{ post.url }}</link>
 					<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 					<description>{{ post.excerpt | xml_escape }}</description>
