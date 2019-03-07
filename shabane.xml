@@ -7,7 +7,7 @@ desc: "قصد دارم برای تمرین صحبت کردن با شما هر ش
 	<channel>
 		<atom:link href="{{ site.url }}/shabane.xml" rel="self" type="application/rss+xml" />
 		<title>شبانه</title>
-		<description>{{ desc }}</description>
+		<description>{{ page.desc }}</description>
 		<link>{{ site.url }}</link>
 		<language>{{ site.lang }}</language>
 		<managingEditor>{{ site.author.email }} ({{ site.author.name }})</managingEditor>
@@ -20,9 +20,9 @@ desc: "قصد دارم برای تمرین صحبت کردن با شما هر ش
 			<url>{{ site.url }}</url>
 			<title>{{ site.title }}</title>
 		</image>
-		<itunes:subtitle>{{ desc }}</itunes:subtitle>
+		<itunes:subtitle>{{ page.desc }}</itunes:subtitle>
 		<itunes:author>{{ site.author.name }}</itunes:author>
-		<itunes:summary>{{ desc }}</itunes:summary>
+		<itunes:summary>{{ page.desc }}</itunes:summary>
 		<itunes:keywords>{{ site.keywords }}</itunes:keywords>
 		<itunes:owner>
 			<itunes:name>{{ site.author.name }}</itunes:name>
