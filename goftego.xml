@@ -50,6 +50,7 @@ desc: "گفتگوهای محسن با مهمانان پادکست."
 				{% endif %}
 				<item>
 					<title>{{ post.podcast.title | xml_escape }}</title>
+					<itunes:title>{{ post.podcast.title | xml_escape }}</itunes:title>
 					<link>{{ site.url }}{{ post.url }}</link>
 					<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 					<description>{{ post.excerpt | xml_escape }}</description>
