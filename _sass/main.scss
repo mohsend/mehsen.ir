@@ -444,6 +444,10 @@ button, .button {
   &:hover {
     background-color: #00c4a7;
   }
+  &.bigger {
+    font-weight: bold;
+    font-size: 120%;
+  }
 }
 
 .castbox {
@@ -454,8 +458,6 @@ button, .button {
 }
 
 .digikala {
-  font-weight: bold;
-  font-size: 120%;
   background-color: #F2717A;
   color: #616161;
   &:hover {

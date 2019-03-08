@@ -4,24 +4,29 @@ layout: default
 
 <article>
 
-	<h1 class="title">خرید «{{ page.title }}»</h1>
+	<h1 class="title">{{ page.title }}</h1>
 
 	<div class="divider"></div>
 
-	{{ content }}
-
-	{% if page.item == 'book' %}
-		{% assign title = page.title | append: ' اثر ' | append: page.writer %}
-	{% endif %}
-
 	<p>
-در صورت استفاده از لینک زیر برای خرید اینترنتی «{{ title }}»؛ محسن <strong>درصدی پورسانت دریافت خواهد کرد بدون اینکه شما مبلغ اضافه‌ای بپردازید</strong>.
+	{% if page.item == 'book' %}
+در صورت استفاده از لینک زیر برای خرید اینترنتی کتاب «{{ page.title }} اثر {{ page.writer }}»؛ محسن <strong>درصدی پورسانت دریافت خواهد کرد بدون اینکه شما مبلغ اضافه‌ای بپردازید</strong>.
+	{% elsif page.item == 'website' %}
+در صورت استفاده از لینک زیر برای عضویت در، یا خرید از سایت «{{ page.title }}»؛ محسن <strong>درصدی پورسانت دریافت خواهد کرد بدون اینکه شما مبلغ اضافه‌ای بپردازید</strong>.
+	{% endif %}
 	</p>
-	<p class="center" style="margin-top: 3em;">
+
+	<p class="center" style="margin: 3em 1em;">
 		{% if page.digikala %}
-		<a href="{{ page.digikala }}" class="button digikala">خرید از دیجیکالا</a>
+		<a href="{{ page.digikala }}" class="button bigger digikala">خرید از دیجیکالا</a>
+		{% endif %}
+		{% if page.website %}
+		<a href="{{ page.website }}" class="button bigger">{{ page.title }}</a>
 		{% endif %}
 	</p>
+
+	{{ content }}
+
 </article>
 
 <div class="back">
