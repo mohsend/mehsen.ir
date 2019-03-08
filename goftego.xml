@@ -1,12 +1,12 @@
 ---
 layout: compress
-desc: "???"
+desc: "گفتگوهای محسن با مهمانان پادکست."
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xml:lang="{{ site.lang }}">
 	<channel>
-		<atom:link href="{{ site.url }}/shabane.xml" rel="self" type="application/rss+xml" />
-		<title>شبانه</title>
+		<atom:link href="{{ site.url }}/goftego.xml" rel="self" type="application/rss+xml" />
+		<title>گفتگوهای محسن</title>
 		<description>{{ desc }}</description>
 		<link>{{ site.url }}</link>
 		<language>{{ site.lang }}</language>
@@ -28,7 +28,7 @@ desc: "???"
 			<itunes:name>{{ site.author.name }}</itunes:name>
 			<itunes:email>{{ site.author.email }}</itunes:email>
 		</itunes:owner>
-		<itunes:image href="{{ site.url }}/public/shabane-spirit.jpg" />
+		<itunes:image href="{{ site.url }}/public/posts/mehsen-kary-001-myths.jpg" />
 		<itunes:category text="Society &amp; Culture">
 			<itunes:category text="Personal Journals" />
 		</itunes:category>
