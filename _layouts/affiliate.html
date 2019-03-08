@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<article>
+
+	<h1 class="title">خرید «{{ page.title }}»</h1>
+
+	<div class="divider"></div>
+
+	{{ content }}
+
+	{% if page.item == 'book' %}
+		{% assign title = page.title | append: ' اثر ' | append: page.writer %}
+	{% endif %}
+
+	<p>
+در صورت استفاده از لینک زیر برای خرید اینترنتی «{{ title }}»؛ محسن <strong>درصدی پورسانت دریافت خواهد کرد بدون اینکه شما مبلغ اضافه‌ای بپردازید</strong>.
+	</p>
+	<p class="center" style="margin-top: 3em;">
+		{% if page.digikala %}
+		<a href="{{ page.digikala }}" class="button digikala">خرید از دیجیکالا</a>
+		{% endif %}
+	</p>
+</article>
+
+<div class="back">
+	<a href="#" onclick="history.back(-1)">{{ site.texts.back }}</a>
+</div>

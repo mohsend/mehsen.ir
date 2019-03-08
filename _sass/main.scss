@@ -453,6 +453,17 @@ button, .button {
   }
 }
 
+.digikala {
+  font-weight: bold;
+  font-size: 120%;
+  background-color: #F2717A;
+  color: #616161;
+  &:hover {
+    background-color: #616161;
+    color: #EF5661;
+  }
+}
+
 #disqus_thread {
   text-align: center;
   border-top: 1px solid #bbb;
