@@ -9,7 +9,8 @@ title: ارتباط با محسن
 
 ---
 
-[کانال تلگرام پادکست](https://t.me/mehsen_ir/)
+[کانال تلگرام پادکست](https://t.me/mehsen_ir/) &middot;
+[سابرددیت پادکست]()
 
 ---
 
@@ -22,6 +23,7 @@ title: ارتباط با محسن
 [اینستاگرام](https://www.instagram.com/mehsend/) &middot;
 [توییتر](https://twitter.com/dstjrd/) &middot;
 [گودریدز](https://www.goodreads.com/mohsend/) &middot;
+[کاربر رددیت](https://www.reddit.com/user/mehsen_ir) &middot;
 [فلیکر](https://www.flickr.com/photos/mehsen/) &middot;
 [گیت‌هاب](https://github.com/mohsend/) &middot;
 [آرکایو](https://archive.org/details/@mehsen) &middot;

@@ -7,7 +7,7 @@ title: پادکست
 #sub img { width: 14rem; max-width: 60%; }
 </style>
 
-## اشتراک
+## اشتراک مِحسن (تمامی پادکست‌ها و سری‌ها)
 <div class="center" id="sub">
 	<p><a href="https://itunes.apple.com/us/podcast/%D9%85-%D8%AD%D8%B3%D9%86/id1431035380"><img src="/public/icons/US_UK_Apple_Podcasts_Listen_Badge_RGB.svg" alt="Listen on Apple Podcasts (iTunes)" /></a></p>
 
@@ -26,6 +26,16 @@ title: پادکست
 	</p>
 
 </div>
+
+## فید سری‌های مختلف
+  
+**شبانه**: 
+[اپل پادکست](https://itunes.apple.com/us/podcast/%D8%B4%D8%A8%D8%A7%D9%86%D9%87/id1455731267?mt=2) &middot;
+[گوگل پادکست](https://www.google.com/podcasts?feed=aHR0cDovL21laHNlbi5pci9zaGFiYW5lLnhtbA%3D%3D) &middot;
+[کست‌باکس](https://castbox.fm/channel/id1484724) &middot;
+[فید](http://mehsen.ir/shabane.xml) 
+
+**گفتگو**: [فید](http://mehsen.ir/goftego.xml)
 
 ## نرم‌افزار پادکست
 اگر هنوز اپلیکیشن پادکست محبوب خودتون رو پیدا نکردید، این‌ها گزینه‌های پیشنهادی من هستن:
@@ -60,9 +70,3 @@ title: پادکست
 [Spotify](https://www.spotify.com/)
 {:.ltr }
 
-## فید
-همه پادکست ها: [`http://mehsen.ir/podcast.xml`](http://mehsen.ir/podcast.xml)
-  
-شبانه: [`http://mehsen.ir/shabane.xml`](http://mehsen.ir/shabane.xml)
-
-گفتگو: [`http://mehsen.ir/goftego.xml`](http://mehsen.ir/goftego.xml)
