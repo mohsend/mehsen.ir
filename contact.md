@@ -10,13 +10,13 @@ title: ارتباط با محسن
 ---
 
 [کانال تلگرام پادکست](https://t.me/mehsen_ir/) &middot;
-[سابرددیت پادکست]()
+[سابرددیت پادکست](https://www.reddit.com/r/mehsen_ir) &middot;
 
 ---
 
 راه‌های ارتباط با محسن: 
 [ایمیل](mailto:me@mehsen.com) &middot;
-[کانال تلگرام](https://t.me/mehsen_com/) &middot;
+[کانال تلگرام محسن](https://t.me/mehsen_com/) &middot;
 [تلگرام](https://t.me/mehsend/) &middot;
 [یوتوب](https://www.youtube.com/channel/UC042DJhjdsKnTmKKOwdmGjg) &middot;
 [آپارات](https://www.aparat.com/mehsend) &middot;
