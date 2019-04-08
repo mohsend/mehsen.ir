@@ -17,12 +17,9 @@ layout: default
 	</p>
 
 	<p class="center" style="margin: 3em 1em;">
-		{% if page.digikala %}
-		<a href="{{ page.digikala }}" class="button bigger digikala">خرید از دیجیکالا</a>
-		{% endif %}
-		{% if page.website %}
-		<a href="{{ page.website }}" class="button bigger">{{ page.title }}</a>
-		{% endif %}
+	{% for link in page.links %} 
+		<a href="{{ link.url }}" class="button bigger {{ link.class }}">{{ link.text }}</a>
+	{% endfor %}
 	</p>
 
 	{{ content }}

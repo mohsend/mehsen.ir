@@ -2,7 +2,10 @@
 layout: affiliate
 title: اسپیس ایران
 item: website
-website: https://portal.spaceiran.com/aff.php?aff=221
+links:
+  - 
+   url: https://portal.spaceiran.com/aff.php?aff=221
+   text: سایت اسپیس ایران
 ---
 
 در اسپیس ایران تمامی آنچه که از خدمات میزبانی وب، ثبت دامنه و سرور های مجازی انتظار دارید را خواهید یافت.  
