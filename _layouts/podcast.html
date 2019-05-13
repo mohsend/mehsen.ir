@@ -37,12 +37,12 @@ layout: default
 	<audio preload="none" id="podcast-player" controls>
 		{% if opus %}
 		<source src="{{ opus }}" type="audio/ogg; codecs=opus">
-		{% endif %}{% if ogg  %}
-		<source src="{{ ogg }}" type="audio/ogg; codecs=vorbis">
-		{% endif %}{% if mp3  %}
-		<source src="{{ mp3 }}" type="audio/mpeg">
 		{% endif %}{% if aac %}
 		<source src="{{ aac }}" type="audio/mp4">
+		{% endif %}{% if mp3  %}
+		<source src="{{ mp3 }}" type="audio/mpeg">
+		{% endif %}{% if ogg  %}
+		<source src="{{ ogg }}" type="audio/ogg; codecs=vorbis">
 		{% endif %}
 		Your browser does not support the audio element. Here's download links: {% if mp3 %}<a href="{{ mp3 }}" download>Download MP3</a> / {% endif %}{% if aac %}<a href="{{ aac }}" download>Download AAC</a> / {% endif %}{% if ogg %}<a href="{{ ogg }}" download>Download OGG</a> / {% endif %}{% if opus %}<a href="{{ opus }}" download>Download OPUS</a>{% endif %}
 	</audio>
@@ -82,6 +82,7 @@ window.addEventListener("hashchange", function () {
 });
 /* Skip to time using hash in url on load */
 if (window.location.hash) {
+  audio.load();
   audio.oncanplay = function() {
     audio.currentTime = parseInt(window.location.hash.slice(1));
   };
