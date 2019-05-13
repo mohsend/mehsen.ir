@@ -56,11 +56,10 @@ desc: "قصد دارم برای تمرین صحبت کردن با شما هر ش
 					<description>{{ post.excerpt | strip_html | xml_escape }}</description>
 					<content:encoded><![CDATA[{{ post.content }}]]></content:encoded>
 					<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-					{% if mp3  %}<enclosure url="{{ mp3 }}" length="{{ post.podcast.mp3.size }}" type="audio/mp3"/>{% endif %}
-					{% if aac  %}<enclosure url="{{ aac }}" length="{{ post.podcast.aac.size }}" type="audio/mp4"/>{% endif %}
-					{% if opus %}<enclosure url="{{ opus }}" length="{{ post.podcast.opus.size }}" type="audio/ogg; codecs=opus"/>{% endif %}
-					{% if ogg  %}<enclosure url="{{ ogg }}" length="{{ post.podcast.ogg.size }}" type="audio/ogg; codecs=vorbis"/>{% endif %}
-					
+					{%    if mp3  %}<enclosure url="{{ mp3 }}" length="{{ post.podcast.mp3.size }}" type="audio/mp3"/>
+					{% elsif aac  %}<enclosure url="{{ aac }}" length="{{ post.podcast.aac.size }}" type="audio/mp4"/>
+					{% elsif opus %}<enclosure url="{{ opus }}" length="{{ post.podcast.opus.size }}" type="audio/ogg; codecs=opus"/>
+					{% elsif ogg  %}<enclosure url="{{ ogg }}" length="{{ post.podcast.ogg.size }}" type="audio/ogg; codecs=vorbis"/>{% endif %}
 					<itunes:author>{{ site.author.name }}</itunes:author>
 					<itunes:subtitle>{{ post.podcast.summary | xml_escape }}</itunes:subtitle>
 					<itunes:summary>{{ post.podcast.summary | xml_escape }}</itunes:summary>
