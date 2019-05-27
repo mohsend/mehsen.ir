@@ -11,3 +11,19 @@ title: آن‌هایی که طرفدارشان ام
 
 - [هیستوری پنل](https://www.buzzsprout.com/203159): هیستوری پنل یک پادکست تاریخی به زبان فارسی است که توسط «معاد طبری» ساخته می شود.
 
+## مرجع
+
+- [Archive.org](https://archive.org)
+
+- [تاریخ ما](https://tarikhema.org/)
+
+- [گنجور](https://ganjoor.net/)
+
+- [نوسخن](http://www.nosokhan.com)
+
+- [ویکی‌نبشته](https://fa.wikisource.org/wiki/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C)
+
+- [کتابخانه دیجیتال نور](https://www.noorlib.ir)
+
+- [واژه](https://www.vajje.com/): واژه‌نامه های آنلاین.
+
