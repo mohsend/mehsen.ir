@@ -8,6 +8,6 @@
 	<p>
 برای دیدن نظرها و یا درج نظر لطفا به صفحه‌ی کست‌باکس بروید.
 	</p>
-	<a href="{{ site.podcast.castbox }}" class="button castbox">باز کردن Castbox</a>
+	<a href="{{ page.podcast.castbox | default: site.podcast.castbox }}" class="button castbox">باز کردن Castbox</a>
 </div>
 {% endif %}
