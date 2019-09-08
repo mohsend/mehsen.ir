@@ -457,12 +457,34 @@ button, .button {
   }
 }
 
+.buybuttons {
+  text-align: center;
+  margin: 0 auto;
+  margin: 2em 1em;
+  > .button {
+    margin: 0.6rem;
+    display: block;
+  }
+}
+
 .digikala {
   background-color: #F2717A;
   color: #616161;
   &:hover {
     background-color: #616161;
     color: #EF5661;
+  }
+  &:after {
+    content: ' *';
+  }
+}
+
+.sibook {
+  background-color: #00BCD4;
+  color: #FFFFFF;
+  &:hover {
+    background-color: #FFFFFF;
+    color: #00BCD4;
   }
 }
 

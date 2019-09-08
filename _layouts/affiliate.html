@@ -10,13 +10,13 @@ layout: default
 
 	<p>
 	{% if page.item == 'book' %}
-در صورت استفاده از لینک زیر برای خرید اینترنتی کتاب «{{ page.title }} اثر {{ page.writer }}»؛ محسن <strong>درصدی پورسانت دریافت خواهد کرد بدون اینکه شما مبلغ اضافه‌ای بپردازید</strong>.
+در صورت استفاده از لینک‌های مشخص شده با <strong>علامت ستاره (*)</strong> برای خرید اینترنتی کتاب «{{ page.title }} اثر {{ page.writer }}»؛ محسن <strong>درصدی پورسانت دریافت خواهد کرد بدون اینکه شما مبلغ اضافه‌ای بپردازید</strong>. قبل از خرید اینترنتی کتاب سری به کتاب‌خانه ویا کتاب‌فروشی‌های محلی بزنید.
 	{% elsif page.item == 'website' %}
 در صورت استفاده از لینک زیر برای عضویت در، یا خرید از سایت «{{ page.title }}»؛ محسن <strong>درصدی پورسانت دریافت خواهد کرد بدون اینکه شما مبلغ اضافه‌ای بپردازید</strong>.
 	{% endif %}
 	</p>
 
-	<p class="center" style="margin: 3em 1em;">
+	<p class="buybuttons">
 	{% for link in page.links %} 
 		<a href="{{ link.url }}" class="button bigger {{ link.class }}">{{ link.text }}</a>
 	{% endfor %}
