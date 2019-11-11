@@ -488,6 +488,15 @@ button, .button {
   }
 }
 
+.gajmarket {
+  background-color: #8fcc1a;
+  color: #FFFFFF;
+  &:hover {
+    background-color: #FFFFFF;
+    color: #8fcc1a;
+  }
+}
+
 #disqus_thread {
   text-align: center;
   border-top: 1px solid #bbb;
