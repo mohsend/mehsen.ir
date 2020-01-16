@@ -471,8 +471,9 @@ button, .button {
   background-color: #F2717A;
   color: #616161;
   &:hover {
-    background-color: #616161;
+    background-color: #FFFFFF;
     color: #EF5661;
+    border: 1px solid #EF5661
   }
   &:after {
     content: ' *';
@@ -485,6 +486,7 @@ button, .button {
   &:hover {
     background-color: #FFFFFF;
     color: #00BCD4;
+    border: 1px solid #00BCD4;
   }
 }
 
@@ -494,6 +496,7 @@ button, .button {
   &:hover {
     background-color: #FFFFFF;
     color: #8fcc1a;
+    border: 1px solid #8fcc1a;
   }
 }
 
