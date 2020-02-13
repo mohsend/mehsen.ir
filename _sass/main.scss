@@ -500,6 +500,16 @@ button, .button {
   }
 }
 
+.goodreads {
+  background-color: #F4F1EA;
+  color: #382110;
+  &:hover {
+    background-color: #B7AD98;
+    color: #F4F1EA;
+    border: 1px solid #F4F1EA;
+  }
+}
+
 #disqus_thread {
   text-align: center;
   border-top: 1px solid #bbb;
