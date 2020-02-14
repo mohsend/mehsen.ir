@@ -13,6 +13,10 @@ links:
    text: لینک معرفی ۳۰بوک *
    class: sibook
   -
+   url: https://fa.wikipedia.org/wiki/%D8%AF%D8%A7%D8%B1%D8%A7%D8%A8%E2%80%8C%D9%86%D8%A7%D9%85%D9%87
+   text: ویکی‌پدیا
+   class: wikipedia
+  -
    url: https://www.goodreads.com/book/show/50909092
    text: Goodreads
    class: goodreads

@@ -29,6 +29,10 @@ links:
    text: چهار جلدی (گاج مارکت)
    class: gajmarket
   -
+   url: https://fa.wikipedia.org/wiki/%D8%B4%D8%A7%D9%87%D9%86%D8%A7%D9%85%D9%87#%D9%88%DB%8C%D8%B1%D8%A7%DB%8C%D8%B4%E2%80%8C%D9%87%D8%A7%DB%8C_%D8%B4%D8%A7%D9%87%D9%86%D8%A7%D9%85%D9%87
+   text: ویکی‌پدیا
+   class: wikipedia
+  -
    url: https://www.goodreads.com/book/show/25261421
    text: Goodreads
    class: goodreads

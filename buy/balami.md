@@ -29,6 +29,10 @@ links:
    text: (نشر هرمس) گاج مارکت
    class: gajmarket
   -
+   url: https://fa.wikipedia.org/wiki/%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE_%D8%A8%D9%84%D8%B9%D9%85%DB%8C
+   text: ویکی‌پدیا
+   class: wikipedia
+  -
    url: https://www.goodreads.com/book/show/5709734
    text: Goodreads
    class: goodreads

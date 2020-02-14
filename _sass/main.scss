@@ -3,9 +3,11 @@ body {
   padding: 20px;
   margin: 0;
   font-weight: 400;
+
   @media (min-width: 992px) {
     padding: 35px 50px;
   }
+
   :lang(fa) {
     font-family: 'Vazir', Tahoma, Airal;
   }
@@ -26,6 +28,7 @@ a {
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid #555;
+
   &.image {
     display: block;
     text-align: center;
@@ -59,13 +62,17 @@ span[data-note] {
   cursor: pointer;
   margin: 0 2px;
   transition: background 0.3s;
+
   &.open {
     background: #838383;
   }
+
   @media (min-width: 768px) {
     vertical-align: 1px;
   }
-  @media (min-width: 992px) {&:hover {
+
+  @media (min-width: 992px) {
+    &:hover {
       background: #838383;
     }
   }
@@ -74,7 +81,7 @@ span[data-note] {
 .note {
   background: #ccc;
   border: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba( 0, 0, 0, 0.2 );
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   padding: 20px 20px 50px;
   position: fixed;
   bottom: 0;
@@ -82,12 +89,14 @@ span[data-note] {
   transition-property: transform;
   transition-duration: 0.6s;
   transition-timing-function: ease;
-  transform: translateY( calc( 100% + 8px ) );
+  transform: translateY(calc(100% + 8px));
   font-size: 14px;
   line-height: 1.7em;
+
   &.shown {
-    transform: translateY( 0 );
+    transform: translateY(0);
   }
+
   @media (min-width: 768px) {
     right: 40px;
     padding-bottom: 20px;
@@ -97,9 +106,10 @@ span[data-note] {
     transition-property: opacity, transform;
     transition-duration: 0.3s;
     opacity: 0;
-    transform: scale( 0.1 ) translateZ( 0 );
+    transform: scale(0.1) translateZ(0);
+
     &.shown {
-      transform: scale( 1 ) translateZ( 0 );
+      transform: scale(1) translateZ(0);
       opacity: 1;
     }
   }
@@ -112,6 +122,7 @@ span[data-note] {
   animation-duration: 0.7s;
   animation-fill-mode: both;
   animation-name: bounce;
+
   a {
     background: #ddd url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAASUExURd3d3YSEhKurq8nJybi4uJubm8C3QHUAAAGDSURBVGje7ZhHksQgDEWNwv2vPCbYJON2IVhM1f8rmkU/JJTwcUAQBEEQBEEQ1EvG4mUMN5Yuoqh71QoKk3PCQ6nTFb5SJ+92ih1CPxwCyAuEhYiq5FgPoT47lkPOjNHTEp84UkOMmV9A9F5WmxJ+Ey+BcGUTlRD2xhkwGSJFcud1upOAmS5kVPiIcpQ51168BfMZkjC8GRIwU7Z8vJMMJ2t0Fbu0DcJ9ntcQsrqr/L/HzXAOMWZ8Xhb9sILIZJ9sahelUOVHyKQhXRVW75NBFZ41pOknFCGDfjJd9muIBIg+Q6YNKUOYNFyKd5fSQwjP968LwnrPcmklzT9L5cYpiO+K1+zLIr49SpuWZIRwV18p3kAu9YaJNUGkO2YKshtiMMSPqfR4qfHk9/nZNHpLGFHinFLp2q+8t+N5cjPY+oYIY+NAciwx5Ns51jyGfrl0lyHM5hr/5TGpvNuQMONHzD5D4qP1rGiLXqfvGLc/tGjdF4PXjyL7GRAEQRAEQRD0r/UHdIwHGjpudnoAAAAASUVORK5CYII=');
     color: #000;
@@ -126,25 +137,32 @@ span[data-note] {
     line-height: 100px;
     border: 5px solid #fff;
     box-sizing: border-box;
+
     &:hover,
     &:focus {
       background: #f14e32;
     }
-    &:hover + .logo-prompt,
-    &:focus + .logo-prompt {
+
+    &:hover+.logo-prompt,
+    &:focus+.logo-prompt {
       display: inline-block !important;
     }
+
     .gravatar {
       width: 80px;
       margin-top: 5px;
       border-radius: 50%;
     }
-    @media (max-width : 480px) {&:hover + .logo-prompt,
-      &:focus + .logo-prompt {
+
+    @media (max-width : 480px) {
+
+      &:hover+.logo-prompt,
+      &:focus+.logo-prompt {
         display: none !important;
       }
     }
   }
+
   .logo-prompt {
     position: absolute;
     display: none;
@@ -152,7 +170,7 @@ span[data-note] {
     padding: 5px;
     border-radius: 3px;
     background: #666;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
     margin-left: 15px;
     color: #fff;
     font-size: 0.8235em;
@@ -165,11 +183,13 @@ span[data-note] {
 
 .rtl {
   direction: rtl;
+
   .post-date {
     float: left;
   }
+
   .back {
-      direction: ltr;
+    direction: ltr;
   }
 }
 
@@ -185,14 +205,17 @@ ul,
 ol {
   margin: 40px 0;
   padding-left: 50px;
+
   li {
     word-wrap: break-word;
   }
+
   img {
     margin: 40px 0;
     border-radius: 5px;
   }
 }
+
 sup {
   vertical-align: top;
   position: relative;
@@ -227,6 +250,7 @@ pre {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   padding: 1rem;
+
   code {
     font-size: 100%;
     color: inherit;
@@ -239,14 +263,17 @@ table {
   width: 100%;
   table-layout: fixed;
   margin: 45px 0;
+
   thead {
     background: #f2f2f2;
   }
+
   th {
     text-align: left;
     padding: 8px 10px;
     border-bottom: 15px solid #fff;
   }
+
   td {
     padding: 4px 0;
   }
@@ -259,36 +286,44 @@ iframe {
 article {
   max-width: 600px;
   margin: 0 auto;
+
   .title {
     line-height: 1.4em;
     text-align: center;
   }
+
   .divider {
     background: #ddd;
-    background: linear-gradient(to right,rgba(255,255,255,0),#bbb,rgba(255,255,255,0));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #bbb, rgba(255, 255, 255, 0));
     height: 1px;
     margin: 2em 0;
   }
+
   .center {
     text-align: center;
     margin: 0 auto;
   }
+
   hr {
     border: 0;
     border-bottom: 1px solid #bbb;
     margin: 30px 0;
   }
+
   p {
     font-size: 15px;
     line-height: 1.9em;
     word-wrap: break-word;
   }
+
   .footnote {
     border: 0;
   }
+
   .footnotes {
     margin: 40px 0;
     display: none;
+
     .reversefootnote {
       border: 0;
     }
@@ -297,12 +332,14 @@ article {
 
 .back {
   text-align: center;
+
   a {
     text-decoration: none;
     margin: 40px auto 0;
     display: inline-block;
     padding: 10px;
     border: 0;
+
     &:before {
       content: "<<";
       margin-right: 5px;
@@ -314,12 +351,15 @@ article {
 section {
   max-width: 600px;
   margin: 0 auto;
+
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
+
     li {
       margin: 25px 0;
+
       .title {
         max-width: 100%;
         overflow: hidden !important;
@@ -327,24 +367,30 @@ section {
         white-space: nowrap !important;
         word-wrap: normal !important;
       }
+
       a {
         text-decoration: none;
         border: 0;
         color: #000;
         box-sizing: border-box;
       }
+
       .post-date {
         float: right;
         margin: 0 0 0 20px;
       }
+
       span {
         display: inline-block;
         color: #757575;
         letter-spacing: 1px;
         text-transform: uppercase;
       }
-      @media (min-width: 992px) {a {
+
+      @media (min-width: 992px) {
+        a {
           border-bottom: 2px solid transparent;
+
           &:hover {
             border-color: #000;
           }
@@ -358,6 +404,7 @@ nav {
   max-width: 600px;
   margin: auto;
   text-align: center;
+
   a {
     text-decoration: none;
     padding: 10px;
@@ -366,18 +413,23 @@ nav {
   }
 }
 
-@keyframes bounce {0% {
-    transform: translate3d( 0, -1000px, 0 );
+@keyframes bounce {
+  0% {
+    transform: translate3d(0, -1000px, 0);
   }
+
   60% {
-    transform: translate3d( 0, 25px, 0 );
+    transform: translate3d(0, 25px, 0);
   }
+
   75% {
-    transform: translate3d( 0, -10px, 0 );
+    transform: translate3d(0, -10px, 0);
   }
+
   90% {
-    transform: translate3d( 0, 5px, 0 );
+    transform: translate3d(0, 5px, 0);
   }
+
   100% {
     transform: none;
   }
@@ -403,9 +455,11 @@ audio {
   &.inline {
     height: 0.9em;
   }
+
   &.post-head {
     height: 1.4em;
   }
+
   margin: 0;
   border-radius: 0;
 }
@@ -415,6 +469,7 @@ audio {
   background-size: contain;
   text-align: center;
   width: 100%;
+
   &:hover .youtube-logo-overlay {
     fill: #FF0000;
   }
@@ -426,7 +481,8 @@ audio {
   padding: 14% 0;
 }
 
-button, .button {
+button,
+.button {
   background-color: #00d1b2;
   border-color: transparent;
   border-width: 1px;
@@ -441,9 +497,11 @@ button, .button {
   white-space: nowrap;
   border: 1px solid transparent;
   border-radius: 4px;
+
   &:hover {
     background-color: #00c4a7;
   }
+
   &.bigger {
     font-weight: bold;
     font-size: 120%;
@@ -452,6 +510,7 @@ button, .button {
 
 .castbox {
   background-color: #FF481A;
+
   &:hover {
     background-color: #FF9852;
   }
@@ -461,54 +520,72 @@ button, .button {
   text-align: center;
   margin: 0 auto;
   margin: 2em 1em;
-  > .button {
+
+  .button {
     margin: 0.6rem;
     display: block;
   }
+
+  .digikala {
+    background-color: #F2717A;
+    color: #616161;
+
+    &:hover {
+      background-color: #FFFFFF;
+      color: #EF5661;
+      border: 1px solid #EF5661
+    }
+
+    &:after {
+      content: ' *';
+    }
+  }
+
+  .sibook {
+    background-color: #00BCD4;
+    color: #FFFFFF;
+
+    &:hover {
+      background-color: #FFFFFF;
+      color: #00BCD4;
+      border: 1px solid #00BCD4;
+    }
+  }
+
+  .gajmarket {
+    background-color: #8fcc1a;
+    color: #FFFFFF;
+
+    &:hover {
+      background-color: #FFFFFF;
+      color: #8fcc1a;
+      border: 1px solid #8fcc1a;
+    }
+  }
+
+  .goodreads {
+    background-color: #F4F1EA;
+    color: #382110;
+    border: 1px solid #B7AD98;
+
+    &:hover {
+      background-color: #B7AD98;
+      color: #F4F1EA;
+    }
+  }
+
+  .wikipedia {
+    background-color: #f6f6f6;
+    color: #000000;
+    border: 1px solid #54595d;
+
+    &:hover {
+      background-color: #54595d;
+      color: #f6f6f6;
+    }
+  }
 }
 
-.digikala {
-  background-color: #F2717A;
-  color: #616161;
-  &:hover {
-    background-color: #FFFFFF;
-    color: #EF5661;
-    border: 1px solid #EF5661
-  }
-  &:after {
-    content: ' *';
-  }
-}
-
-.sibook {
-  background-color: #00BCD4;
-  color: #FFFFFF;
-  &:hover {
-    background-color: #FFFFFF;
-    color: #00BCD4;
-    border: 1px solid #00BCD4;
-  }
-}
-
-.gajmarket {
-  background-color: #8fcc1a;
-  color: #FFFFFF;
-  &:hover {
-    background-color: #FFFFFF;
-    color: #8fcc1a;
-    border: 1px solid #8fcc1a;
-  }
-}
-
-.goodreads {
-  background-color: #F4F1EA;
-  color: #382110;
-  &:hover {
-    background-color: #B7AD98;
-    color: #F4F1EA;
-    border: 1px solid #F4F1EA;
-  }
-}
 
 #disqus_thread {
   text-align: center;
@@ -518,8 +595,9 @@ button, .button {
 
 .player-container {
   img {
-   border-radius: 5%;
+    border-radius: 5%;
   }
+
   audio {
     width: 100%;
   }
@@ -535,8 +613,10 @@ footer {
   padding-top: 2rem;
   margin-top: 2rem;
   border-top: solid 1px #ddd;
+
   .license {
     text-align: center;
+
     img {
       margin: 0;
     }
