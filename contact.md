@@ -10,7 +10,8 @@ title: ارتباط با محسن
 ---
 
 [کانال تلگرام پادکست](https://t.me/mehsen_ir/) &middot;
-[سابرددیت پادکست](https://www.reddit.com/r/mehsen_ir) &middot;
+[سرور دیسکورد پادکست](https://discord.gg/TAc3wPE) &middot;
+[سابرددیت پادکست](https://www.reddit.com/r/mehsen_ir)
 
 ---
 
