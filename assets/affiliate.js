@@ -17,6 +17,6 @@ function encode(open) {
             window.open(affiliate, '_blank');
         }
     } catch {
-        alert("به نظر میاد لینک دیجیکالا نیست. -ـ-");
+        alert("به نظر میاد لینک کالای دیجیکالا نیست. -ـ-");
     }
 }
