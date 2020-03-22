@@ -35,7 +35,9 @@ title: پادکست
 [کست‌باکس](https://castbox.fm/channel/id1484724) &middot;
 [فید](https://mehsen.ir/shabane.xml) 
 
-**گفتگو**: [فید](https://mehsen.ir/goftego.xml)
+**گفتگو**: 
+[فید](https://mehsen.ir/goftego.xml) &middot;
+[کست‌باکس](https://castbox.fm/channel/id2676607)
 
 ## نرم‌افزار پادکست
 اگر هنوز اپلیکیشن پادکست محبوب خودتون رو پیدا نکردید، این‌ها گزینه‌های پیشنهادی من هستن:
