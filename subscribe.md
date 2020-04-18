@@ -30,7 +30,7 @@ title: پادکست
 ## فید سری‌های مختلف
   
 **شبانه**: 
-[اپل پادکست](https://itunes.apple.com/us/podcast/%D8%B4%D8%A8%D8%A7%D9%86%D9%87/id1455731267?mt=2) &middot;
+[اپل پادکست](https://itunes.apple.com/us/podcast/%D8%B4%D8%A8%D8%A7%D9%86%D9%87/id1455731267) &middot;
 [گوگل پادکست](https://www.google.com/podcasts?feed=aHR0cDovL21laHNlbi5pci9zaGFiYW5lLnhtbA%3D%3D) &middot;
 [کست‌باکس](https://castbox.fm/channel/id1484724) &middot;
 [فید](https://mehsen.ir/shabane.xml) 
@@ -53,13 +53,13 @@ title: پادکست
 {:.ltr }
 
 **iOS**:
-[Castbox](https://itunes.apple.com/app/castbox-radio/id1243410543?mt=8)
+[Castbox](https://itunes.apple.com/app/castbox-radio/id1243410543)
 &middot;
-[Overcast](https://itunes.apple.com/us/app/overcast-podcast-player/id888422857?mt=8)
+[Overcast](https://itunes.apple.com/us/app/overcast-podcast-player/id888422857)
 &middot;
-[Apple Podcasts](https://itunes.apple.com/us/app/podcasts/id525463029?mt=8) (از قبل نصب)
+[Apple Podcasts](https://itunes.apple.com/us/app/podcasts/id525463029) (از قبل نصب)
 &middot; 
-[Spotify](https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8)
+[Spotify](https://itunes.apple.com/us/app/spotify-music/id324684580)
 {:.ltr }
 
 **Desktop**:
