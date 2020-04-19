@@ -12,7 +12,7 @@ title: لینک‌های معرف
 
 [دیجی‌کالا](https://affstat.adro.co/click/169768e2-8920-4a25-a90b-de97baf7dc48/aHR0cHM6Ly93d3cuZGlnaWthbGEuY29t) به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به سه اصل، پرداخت در محل، 7 روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا موفق شده تا همگام با فروشگاه‌های معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی ایران تبدیل شود.
 
-### تولید لینک دلخواه خودتان
+### [تولید لینک دلخواه خودتان](/buy/digikala)
 <div style="width: 100%;">
 <div style="direction: ltr; width: 70%; float: left;">
 <input style="width: 100%;" type="text" placeholder="https://digikala.com/..." id="url" name="url" value="">
