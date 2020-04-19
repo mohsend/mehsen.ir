@@ -1,6 +1,6 @@
 ---
 layout: page
-title: لینک‌های معرف
+title: لینک‌های معرف دیجیکالا
 ---
 
 ## [دیجی‌کالا](https://affstat.adro.co/click/169768e2-8920-4a25-a90b-de97baf7dc48/aHR0cHM6Ly93d3cuZGlnaWthbGEuY29t)
