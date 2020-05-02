@@ -31,6 +31,7 @@ function add_to_list(url, fullUrl) {
     var linknode = document.createElement("A");
     var textnode = document.createTextNode(decodeURI(fullUrl));
     linknode.href = affiliate;
+    linknode.setAttribute("target", "_blank");
     linknode.appendChild(textnode);
     node.appendChild(linknode);
     parent.appendChild(node);
