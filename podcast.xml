@@ -56,7 +56,7 @@ layout: compress
 				<description>{{ post.excerpt | strip_html | xml_escape  }}</description>
 				<content:encoded><![CDATA[{{ post.content }}]]></content:encoded>
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-				{%    if mp3  %}<enclosure url="{{ mp3 }}" length="{{ post.podcast.mp3.size }}" type="audio/mp3"/>
+				{%    if mp3  %}<enclosure url="{{ mp3 }}" length="{{ post.podcast.mp3.size }}" type="audio/mpeg"/>
 				{% elsif m4a  %}<enclosure url="{{ m4a }}" length="{{ post.podcast.m4a.size }}" type="audio/x-m4a"/>
 				{% elsif opus %}<enclosure url="{{ opus }}" length="{{ post.podcast.opus.size }}" type="audio/ogg; codecs=opus"/>
 				{% elsif ogg  %}<enclosure url="{{ ogg }}" length="{{ post.podcast.ogg.size }}" type="audio/ogg; codecs=vorbis"/>{% endif %}
