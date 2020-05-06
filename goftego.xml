@@ -39,14 +39,14 @@ desc: "گفتگوهای محسن با مهمانان پادکست."
 				{% if post.podcast.mp3.file  %} {% assign mp3  = post.podcast.mp3.file  %} {% endif %}
 				{% if post.podcast.ogg.file  %} {% assign ogg  = post.podcast.ogg.file  %} {% endif %}
 				{% if post.podcast.opus.file %} {% assign opus = post.podcast.opus.file %} {% endif %}
-				{% if post.podcast.aac.file  %} {% assign aac  = post.podcast.aac.file  %} {% endif %}
+				{% if post.podcast.m4a.file  %} {% assign m4a  = post.podcast.m4a.file  %} {% endif %}
 
 				{% if site.podcast.statistics_prefix %}
 					{% assign prefix = site.podcast.statistics_prefix %}
 					{% if mp3  %} {% assign mp3  = mp3  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
 					{% if ogg  %} {% assign ogg  = ogg  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
 					{% if opus %} {% assign opus = opus | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
-					{% if aac  %} {% assign aac  = aac  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
+					{% if m4a  %} {% assign m4a  = m4a  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
 				{% endif %}
 				<item>
 					<title>{{ post.podcast.title | xml_escape }}</title>
@@ -57,7 +57,7 @@ desc: "گفتگوهای محسن با مهمانان پادکست."
 					<content:encoded><![CDATA[{{ post.content }}]]></content:encoded>
 					<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
 					{%    if mp3  %}<enclosure url="{{ mp3 }}" length="{{ post.podcast.mp3.size }}" type="audio/mp3"/>
-					{% elsif aac  %}<enclosure url="{{ aac }}" length="{{ post.podcast.aac.size }}" type="audio/mp4"/>
+					{% elsif m4a  %}<enclosure url="{{ m4a }}" length="{{ post.podcast.m4a.size }}" type="audio/x-m4a"/>
 					{% elsif opus %}<enclosure url="{{ opus }}" length="{{ post.podcast.opus.size }}" type="audio/ogg; codecs=opus"/>
 					{% elsif ogg  %}<enclosure url="{{ ogg }}" length="{{ post.podcast.ogg.size }}" type="audio/ogg; codecs=vorbis"/>{% endif %}
 					<itunes:author>{{ site.author.name }}</itunes:author>
