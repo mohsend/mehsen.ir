@@ -6,7 +6,7 @@ title: حمایت
 
 ## نظر دادن
 
-با ستاره دادن و ثبت نظر در [اپل پادکست](https://itunes.apple.com/us/podcast/%D9%85-%D8%AD%D8%B3%D9%86/id1431035380?mt=2) و یا [کست‌باکس](https://castbox.fm/channel/%D9%85%D9%90%D8%AD%D8%B3%D9%86-id1446853) کمک کنید بهتر دیده و شنیده شیم.
+با ستاره دادن و ثبت نظر در [اپل پادکست](https://itunes.apple.com/us/podcast/%D9%85-%D8%AD%D8%B3%D9%86/id1431035380?mt=2) و یا [کست‌باکس](https://castbox.fm/channel/%D9%85%D9%90%D8%AD%D8%B3%D9%86-id1446853) و یا [پادکست اَدیکت](https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict) کمک کنید بهتر دیده و شنیده شیم.
 
 منتظر گرفتن پیشنهادها و ایده‌هاتون با [ایمیل](mailto:me@mehsen.com) یا [تلگرام](https://t.me/mehsend/) هم هستم. اگر صوتی بفرستید که بشه توی پادکست صداتون رو پخش کرد که چه بهتر.
 
