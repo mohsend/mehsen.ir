@@ -9,8 +9,9 @@ function load_list() {
 }
 
 function make_affiliate(url) {
-    const base = "https://affstat.adro.co/click/169768e2-8920-4a25-a90b-de97baf7dc48/";
-    var affiliate_url = base + window.btoa(url);
+    const base_digikala  = "https://affstat.adro.co/click/169768e2-8920-4a25-a90b-de97baf7dc48/";
+    const base_digistyle = "https://affstat.adro.co/click/8d83a449-9094-4829-9823-d36b427cd4d0/";
+    return base_digikala + window.btoa(url);
     return affiliate_url;
 }
 
