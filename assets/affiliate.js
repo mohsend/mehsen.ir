@@ -1,4 +1,11 @@
 var products = [];
+var affiliate_links = true;
+
+var affiliate_checkbox = document.getElementById("affiliate_checkbox");
+affiliate_checkbox.addEventListener('change', function() {
+    affiliate_links = this.checked;
+    make_html_list();
+});
 
 function load_list() {
     listString = window.location.hash.substring(1);
@@ -12,7 +19,6 @@ function make_affiliate(url) {
     const base_digikala  = "https://affstat.adro.co/click/169768e2-8920-4a25-a90b-de97baf7dc48/";
     const base_digistyle = "https://affstat.adro.co/click/8d83a449-9094-4829-9823-d36b427cd4d0/";
     return base_digikala + window.btoa(url);
-    return affiliate_url;
 }
 
 function make_product_from_id(id) {
@@ -37,7 +43,7 @@ function add_to_products_from_url(url) {
     return product;
 }
 
-function make_html_list(url) {
+function make_html_list() {
     // add to ul
     const parent = document.getElementById('afflinks');
     parent.innerHTML = "";
@@ -49,8 +55,7 @@ function make_html_list(url) {
         } else {
             var textnode = document.createTextNode(decodeURI(product.url));
         }
-
-        linknode.href = product.affiliate_url;
+        linknode.href = affiliate_links ? product.affiliate_url : product.url;
         linknode.setAttribute("target", "_blank");
         linknode.appendChild(textnode);
         node.appendChild(linknode);
@@ -58,7 +63,8 @@ function make_html_list(url) {
     });
 }
 
-function encode(open) {
+function encode(event) {
+    event.preventDefault();
     const url_input = document.getElementById('url');
     var url = url_input.value.trim();
     url_input.value = '';
@@ -66,9 +72,6 @@ function encode(open) {
         var product = add_to_products_from_url(url);
         make_html_list();
         update_window_hash();
-        if (open == '_blank') {
-            window.open(product.affiliate_url, '_blank');
-        }
     } catch {
         alert("به نظر میاد لینک کالای دیجیکالا نیست. -ـ-");
     }
