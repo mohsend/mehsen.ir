@@ -36,6 +36,7 @@ title: پادکست
 [فید](https://mehsen.ir/shabane.xml) 
 
 **بازپخش برنامه‌های زنده (لایوکست)**:
+[کست‌باکس](https://castbox.fm/channel/id3462221) &middot;
 [فید](https://mehsen.ir/livecasts.xml)
 
 **گفتگو**: 
