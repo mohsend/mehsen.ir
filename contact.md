@@ -19,6 +19,7 @@ title: ارتباط با محسن
 [ایمیل](mailto:me@mehsen.com) &middot;
 [کانال تلگرام محسن](https://t.me/mehsen_com/) &middot;
 [تلگرام](https://t.me/mehsend/) &middot;
+[پیام ناشناس «حرف به من»](/anon) &middot;
 [یوتوب](https://www.youtube.com/channel/UC042DJhjdsKnTmKKOwdmGjg) &middot;
 [آپارات](https://www.aparat.com/mehsend) &middot;
 [اینستاگرام](https://www.instagram.com/mehsend/) &middot;
