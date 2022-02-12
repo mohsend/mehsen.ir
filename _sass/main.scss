@@ -483,7 +483,7 @@ audio {
 
 button,
 .button {
-  background-color: #00d1b2;
+  background-color: #00c4a7;
   border-color: transparent;
   border-width: 1px;
   color: #FFFFFF;
@@ -499,7 +499,9 @@ button,
   border-radius: 4px;
 
   &:hover {
-    background-color: #00c4a7;
+    background-color: #fff;
+    border-color: #00c4a7;
+    color: #00c4a7;
   }
 
   &.bigger {
@@ -508,11 +510,21 @@ button,
   }
 }
 
-.castbox {
+.button.castbox {
   background-color: #FF481A;
-
   &:hover {
-    background-color: #FF9852;
+    background-color: #fff;
+    color: #FF481A;
+    border-color: #FF481A;
+  }
+}
+
+.button.youtube {
+  background-color: #FF0000;
+  &:hover {
+    background-color: #fff;
+    color: #FF0000;
+    border-color: #FF0000;
   }
 }
 
@@ -533,7 +545,7 @@ button,
     &:hover {
       background-color: #FFFFFF;
       color: #EF5661;
-      border: 1px solid #EF5661
+      border-color: #EF5661
     }
 
     &:after {
@@ -548,7 +560,7 @@ button,
     &:hover {
       background-color: #FFFFFF;
       color: #00BCD4;
-      border: 1px solid #00BCD4;
+      border-color: #00BCD4;
     }
   }
 
@@ -559,29 +571,29 @@ button,
     &:hover {
       background-color: #FFFFFF;
       color: #8fcc1a;
-      border: 1px solid #8fcc1a;
+      border-color: #8fcc1a;
     }
   }
 
   .goodreads {
     background-color: #F4F1EA;
     color: #382110;
-    border: 1px solid #B7AD98;
-
     &:hover {
-      background-color: #B7AD98;
+      background-color: #382110;
       color: #F4F1EA;
+      border-color: #382110;
     }
   }
 
   .wikipedia {
     background-color: #f6f6f6;
     color: #000000;
-    border: 1px solid #54595d;
+    border-color: #54595d;
 
     &:hover {
       background-color: #54595d;
       color: #f6f6f6;
+      border-color: transparent;
     }
   }
 }

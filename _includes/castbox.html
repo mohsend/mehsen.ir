@@ -8,5 +8,8 @@
 برای دیدن نظرها و یا درج نظر لطفا به صفحه‌ی کست‌باکس بروید.
 	</p>
 	<a href="{{ page.podcast.castbox | default: site.podcast.castbox }}" class="button castbox">باز کردن Castbox</a>
+	{% if page.video.youtube_id %}
+		<a href="{{ page.video.youtube_id | prepend: 'https://youtu.be/'}}" class="button youtube">باز کردن youtube</a>
+	{% endif %}
 </div>
 {% endif %}

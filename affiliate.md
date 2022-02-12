@@ -16,7 +16,7 @@ title: لینک‌های معرف
 
 <form onsubmit="encode(event)" style="display: flex; direction: ltr;">
 <input type="text" style="flex: 2;" placeholder="https://digikala.com/..." id="url" value="">
-<input type="submit" style="" value="تولید لینک">
+<input type="submit" class="button" value="تولید لینک">
 </form>
 <div>
 <br>
