@@ -15,7 +15,7 @@ layout: default
 			{% endif %}
 		<li>
 			<div class="post-date">
-				<time timestamp="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+				<time timestamp="{{ post.date | date_to_xmlschema }}" title="{{ page.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time>
 			</div>
 			<div class="title">
 				<a href="{{ post.url | prepend: site.baseurl }}" {{ ptype }}>{{ post.title }}</a>

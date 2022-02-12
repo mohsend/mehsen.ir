@@ -17,7 +17,7 @@ layout: default
 	<div class="center">
 		<h1>{{ page.title }}</h1>
 		{% include post-links.html link=page.link video=page.video class='post-head' %}
-		<time timestamp="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+		<time timestamp="{{ page.date | date_to_xmlschema }}" title="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%Y-%m-%d" }}</time>
 	</div>
 
 	<div class="divider"></div>
