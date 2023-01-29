@@ -17,6 +17,8 @@ title: پادکست
 
 	<p><a href="https://open.spotify.com/show/54tjqNt3yqwImtcnoaJp6J"><img src="/public/icons/spotify-badge.png" alt="Listen on Spotify" /></a></p>
 
+	<p><a href="https://www.podbean.com/podcast-detail/uwaiv-1697a0/%D9%85%D9%90%D8%AD%D8%B3%D9%86-Podcast"><img src="/public/icons/podbean-badge.png" alt="Available on Podbean" /></a></p>
+
 	<p><a href="https://mehsen.ir/podcast.xml"><img src="/public/icons/rss-feed-badge.svg" alt="Subscribe via RSS Feed" /></a></p>
 
 	<p>
@@ -33,6 +35,7 @@ title: پادکست
 [اپل پادکست](https://itunes.apple.com/us/podcast/%D8%B4%D8%A8%D8%A7%D9%86%D9%87/id1455731267) &middot;
 [گوگل پادکست](https://www.google.com/podcasts?feed=aHR0cDovL21laHNlbi5pci9zaGFiYW5lLnhtbA%3D%3D) &middot;
 [کست‌باکس](https://castbox.fm/channel/id1484724) &middot;
+[پادبین](https://www.podbean.com/podcast-detail/85s56-162050/%D8%B4%D8%A8%D8%A7%D9%86%D9%87-Podcast) &middot;
 [فید](https://mehsen.ir/shabane.xml) 
 
 **بازپخش برنامه‌های زنده (لایوکست)**:
