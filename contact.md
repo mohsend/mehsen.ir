@@ -22,7 +22,7 @@ title: ارتباط با محسن
 [پیام ناشناس «حرف به من»](/anon) &middot;
 [یوتوب](https://www.youtube.com/channel/UC042DJhjdsKnTmKKOwdmGjg) &middot;
 [آپارات](https://www.aparat.com/mehsend) &middot;
-[اینستاگرام](https://www.instagram.com/mehsend/) &middot;
+[اینستاگرام](https://www.instagram.com/mehsen.cast/) &middot;
 [توییتر](https://twitter.com/dstjrd/) &middot;
 [گودریدز](https://www.goodreads.com/mohsend/) &middot;
 [کاربر رددیت](https://www.reddit.com/user/mehsen_ir) &middot;
