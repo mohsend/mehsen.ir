@@ -15,7 +15,7 @@ layout: compress
 		<pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<image>
-			<link>{{ site.url }}</link>
+			<link>{{ site.url }}{{ site.podcast.cover_art }}</link>
 			<url>{{ site.url }}</url>
 			<title>{{ site.title }}</title>
 		</image>
