@@ -20,7 +20,6 @@ layout: compress
 			<title>{{ site.title }}</title>
 		</image>
 		<itunes:type>{{ site.podcast.type | default: "episodic" }}</itunes:type>
-		<itunes:subtitle>{{ site.podcast.subtitle | default: site.description | strip_html | xml_escape }}</itunes:subtitle>
 		<itunes:summary>{{ site.podcast.summary | default: site.description | strip_html | xml_escape }}</itunes:summary>
 		<itunes:author>{{ site.author.name }}</itunes:author>
 		<itunes:keywords>{{ site.keywords }}</itunes:keywords>
@@ -32,7 +31,7 @@ layout: compress
 		<itunes:category text="Society &amp; Culture">
 			<itunes:category text="Personal Journals" />
 		</itunes:category>
-		<itunes:explicit>no</itunes:explicit>
+		<itunes:explicit>false</itunes:explicit>
 		{% for post in site.posts %}
 		{% if post.layout == 'podcast' %}
 
@@ -62,12 +61,11 @@ layout: compress
 				{% elsif ogg  %}<enclosure url="{{ ogg }}" length="{{ post.podcast.ogg.size }}" type="audio/ogg; codecs=vorbis"/>{% endif %}
 				
 				<itunes:author>{{ site.author.name }}</itunes:author>
-				<itunes:subtitle>{{ post.podcast.summary | xml_escape }}</itunes:subtitle>
 				<itunes:summary>{{ post.podcast.summary | xml_escape }}</itunes:summary>
 				<itunes:duration>{{ post.podcast.duration }}</itunes:duration>
 				<itunes:keywords>{{ post.podcast.keywords }}</itunes:keywords>
 				<itunes:image href="{{ site.url }}{{ post.podcast.image }}" />
-				<itunes:explicit>{{ post.podcast.explicit | default: "no" }}</itunes:explicit>
+				<itunes:explicit>{{ post.podcast.explicit | default: "false" }}</itunes:explicit>
 				<itunes:episodeType>{{ post.podcast.episodeType | default: "full" }}</itunes:episodeType>
 			</item>
 		{% endif %}
