@@ -49,6 +49,8 @@ and regain the blissful seat,
 
 میلتون داستان کل این شعر حماسی بلند رو در چهار خط اول به ما اعلام می‌کنه.
 
+![Illustration by Gustave Doré in John Milton's Paradise Lost](/public/posts/2019-02-09-Gustave-Dore_Paradise-Lost.jpg)
+
 نفس تازه می‌خوام. سرمو از زیر کرسی بیرون میارم. چشم‌هام رو می‌بندم. صدای یکنواخت تهویه میاد. مدتی که می‌گذره، تو صدای تهویه الگوی آهنگینی می‌شنوم.
 
 می‌فهمم گرسنگی و خستگی دیگه جدی شدن.
