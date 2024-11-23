@@ -9,23 +9,19 @@ title: ارتباط با محسن
 
 ---
 
-[کانال تلگرام پادکست](https://t.me/mehsen_ir/) &middot;
-[سرور دیسکورد پادکست](https://discord.gg/TAc3wPE) &middot;
-[سابرددیت پادکست](https://www.reddit.com/r/mehsen_ir)
+[کانال تلگرام پادکست](https://t.me/mehsen_ir/)
 
 ---
 
 راه‌های ارتباط با محسن: 
 [ایمیل](mailto:me@mehsen.com) &middot;
-[کانال تلگرام محسن](https://t.me/mehsen_com/) &middot;
 [تلگرام](https://t.me/mehsend/) &middot;
-[پیام ناشناس «حرف به من»](/anon) &middot;
-[یوتوب](https://www.youtube.com/channel/UC042DJhjdsKnTmKKOwdmGjg) &middot;
+[پیام ناشناس با «ربات حرف به من»](/anon) &middot;
+[کانال تلگرام محسن](https://t.me/mehsen_com/) &middot;
+[یوتوب](https://www.youtube.com/@mohsend72) &middot;
 [آپارات](https://www.aparat.com/mehsend) &middot;
 [اینستاگرام](https://www.instagram.com/mehsen.cast/) &middot;
-[توییتر](https://twitter.com/dstjrd/) &middot;
 [گودریدز](https://www.goodreads.com/mohsend/) &middot;
-[کاربر رددیت](https://www.reddit.com/user/mehsen_ir) &middot;
 [فلیکر](https://www.flickr.com/photos/mehsen/) &middot;
 [گیت‌هاب](https://github.com/mohsend/) &middot;
 [آرکایو](https://archive.org/details/@mehsen) &middot;
