@@ -1,82 +1,13 @@
 ---
-layout: compress
-desc: "گفتگوهای محسن با مهمانان پادکست."
+layout: podcastfeed
+title: "گفتگوهای محسن"
+description: "گفتگوهای محسن با مهمانان پادکست."
+summary: "گفتگوهای محسن با مهمانان پادکست."
+lang: "fa"
+type: "episodic"
+image: "/public/posts/mehsen-kary-001-myths.jpg"
+explicit: "false"
+category: "conversation"
+itunes_category: "Society &amp; Culture"
+itunes_sub_category: "Personal Journals"
 ---
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xml:lang="{{ site.lang }}">
-	<channel>
-		<atom:link href="{{ site.url }}/goftego.xml" rel="self" type="application/rss+xml" />
-		<title>گفتگوهای محسن</title>
-		<description>{{ desc }}</description>
-		<link>{{ site.url }}</link>
-		<language>{{ site.lang }}</language>
-		<managingEditor>{{ site.author.email }} ({{ site.author.name }})</managingEditor>
-		<webMaster>{{ site.author.email }} ({{ site.author.name }})</webMaster>
-		<copyright>2018-{{ 'now' | date: "%Y" }} CreativeCommons Attribution 4.0 International - {{ site.title }}</copyright>
-		<pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-		<image>
-			<link>{{ site.url }}{{ site.podcast.cover_art }}</link>
-			<url>{{ site.url }}</url>
-			<title>{{ site.title }}</title>
-		</image>
-		<itunes:author>{{ site.author.name }}</itunes:author>
-		<itunes:summary>{{ desc }}</itunes:summary>
-		<itunes:keywords>{{ site.keywords }}</itunes:keywords>
-		<itunes:owner>
-			<itunes:name>{{ site.author.name }}</itunes:name>
-			<itunes:email>{{ site.author.email }}</itunes:email>
-		</itunes:owner>
-		<itunes:image href="{{ site.url }}/public/posts/mehsen-kary-001-myths.jpg" />
-		<itunes:category text="Society &amp; Culture">
-			<itunes:category text="Personal Journals" />
-		</itunes:category>
-		<itunes:explicit>false</itunes:explicit>
-		{% for post in site.posts %}
-			{% if post.layout == 'podcast' and post.category == 'conversation' %}
-
-				{% if post.podcast.mp3.file  %} {% assign mp3  = post.podcast.mp3.file  %} {% endif %}
-				{% if post.podcast.ogg.file  %} {% assign ogg  = post.podcast.ogg.file  %} {% endif %}
-				{% if post.podcast.opus.file %} {% assign opus = post.podcast.opus.file %} {% endif %}
-				{% if post.podcast.m4a.file  %} {% assign m4a  = post.podcast.m4a.file  %} {% endif %}
-
-				{% if site.podcast.statistics_prefix %}
-					{% assign prefix = site.podcast.statistics_prefix %}
-					{% if mp3  %} {% assign mp3  = mp3  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
-					{% if ogg  %} {% assign ogg  = ogg  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
-					{% if opus %} {% assign opus = opus | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
-					{% if m4a  %} {% assign m4a  = m4a  | remove_first: 'https://' | remove_first: 'http://' | prepend: prefix %} {% endif %}
-				{% endif %}
-				<item>
-					<title>{{ post.podcast.title | xml_escape }}</title>
-					<itunes:title>{{ post.podcast.title | xml_escape }}</itunes:title>
-					<link>{{ site.url }}{{ post.url }}</link>
-					<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-					<description>{{ post.excerpt | strip_html | xml_escape }}</description>
-					<content:encoded><![CDATA[{{ post.content }}]]></content:encoded>
-					<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-					{%    if mp3  %}<enclosure url="{{ mp3 }}" length="{{ post.podcast.mp3.size }}" type="audio/mpeg"/>
-					{% elsif m4a  %}<enclosure url="{{ m4a }}" length="{{ post.podcast.m4a.size }}" type="audio/x-m4a"/>
-					{% elsif opus %}<enclosure url="{{ opus }}" length="{{ post.podcast.opus.size }}" type="audio/ogg; codecs=opus"/>
-					{% elsif ogg  %}<enclosure url="{{ ogg }}" length="{{ post.podcast.ogg.size }}" type="audio/ogg; codecs=vorbis"/>{% endif %}
-					<itunes:author>{{ site.author.name }}</itunes:author>
-					<itunes:summary>{{ post.podcast.summary | xml_escape }}</itunes:summary>
-					<itunes:duration>{{ post.podcast.duration }}</itunes:duration>
-					<itunes:keywords>{{ post.podcast.keywords }}</itunes:keywords>
-					<itunes:image href="{{ site.url }}{{ post.podcast.image }}" />
-					<itunes:explicit>{{ post.podcast.explicit | default: "false" }}</itunes:explicit>
-					<itunes:episodeType>{{ post.podcast.episodeType | default: "full" }}</itunes:episodeType>
-					{% if post.podcast.episode %}
-					<itunes:episode>{{ post.podcast.episode }}</itunes:episode>
-					{% endif %}
-					{% if post.podcast.season %}
-					<itunes:season>{{ post.podcast.season }}</itunes:season>
-					{% endif %}
-					{% if post.podcast.block %}
-					<itunes:block>{{ post.podcast.block }}</itunes:block>
-					{% endif %}
-				</item>
-			{% endif %}
-		{% endfor %}
-	</channel>
-</rss>
