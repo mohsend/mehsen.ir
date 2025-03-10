@@ -18,7 +18,7 @@ title: ارتباط با محسن
 [تلگرام](https://t.me/mehsend/) &middot;
 [پیام ناشناس با «ربات حرف به من»](/anon) &middot;
 [کانال تلگرام محسن](https://t.me/mehsen_com/) &middot;
-[یوتوب](https://www.youtube.com/@mohsend72) &middot;
+[یوتوب](https://www.youtube.com/@mehsend) &middot;
 [آپارات](https://www.aparat.com/mehsend) &middot;
 [اینستاگرام](https://www.instagram.com/mehsen.cast/) &middot;
 [گودریدز](https://www.goodreads.com/mohsend/) &middot;
